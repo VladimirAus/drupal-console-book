@@ -18,4 +18,4 @@
 [![Indava](https://www.drupal.org/files/indava-logo.png)](http://www.indava.com/)
 [![FFW](https://www.drupal.org/files/ffw-logo.png)](https://ffwagency.com)
 
-> Drupal является зарегистрированной торговой маркой Дриса Бьютапта (Dries Buytaert).
+> Drupal является зарегистрированной торговой маркой Дриса Бьютарта (Dries Buytaert).
