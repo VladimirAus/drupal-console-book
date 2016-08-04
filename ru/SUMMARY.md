@@ -3,9 +3,9 @@
 * [О документации Drupal Console](README.md)
 
 * [Что такое Drupal Console?](about/what-is-the-drupal-console.md)
-  * [Зачем мне это?](about/why-should-you-care-about.md)
-  * [В чем мне поможет Drupal Console?](about/how-does-drupal-console-help.md)
-  * [Где скачать проект?](about/where-do-i-find-the-project.md)
+  * [Зачем нужна Drupal Console?](about/why-should-you-care-about.md)
+  * [Как поможет Drupal Console?](about/how-does-drupal-console-help.md)
+  * [Где найти Drupal Console?](about/where-do-i-find-the-project.md)
 
 * [Установка](getting/project.md)
   * [Стандартная инсталляция](getting/installer.md)
