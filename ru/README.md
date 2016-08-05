@@ -13,7 +13,7 @@
 Вы можете внести свой вклад в улучшение этой документации на [GitHub](https://github.com/hechoendrupal/drupal-console-book).
 
 ## Спонсоры
-[![weKnow](https://www.drupal.org/files/weKnow-logo.png)](https://weknowinc.com)
+[![weKnow](https://www.drupal.org/files/weKnow-logo.png)](http://weknowinc.com)
 
 [![Anexus](https://www.drupal.org/files/anexus-logo.png)](http://www.anexusit.com/)
 
