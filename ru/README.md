@@ -2,17 +2,17 @@
 
 > **Внимание: Этот проект находится в стадии разработки.**
 
-Эта книга документирует проект [Drupal Console](http://drupalconsole.com/).
+Эта книга содержит документацию проекта [Drupal Console](http://drupalconsole.com/).
 
-## Внести свой вклад в проект
+## Помочь проекту
 
 Вы можете внести свой вклад в улучшение этого проекта на [Github](https://github.com/hechoendrupal/DrupalConsole)
 
-## Внести свой вклад в документацию
+## Помочь улучшить документацию
 
 Вы можете внести свой вклад в улучшение этой документации на [GitHub](https://github.com/hechoendrupal/drupal-console-book).
 
-## Поддержка организаций
+## Спонсоры
 [![weKnow](https://www.drupal.org/files/weKnow-logo.png)](https://weknowinc.com)
 [![Anexus](https://www.drupal.org/files/anexus-logo.png)](http://www.anexusit.com/)
 [![Indava](https://www.drupal.org/files/indava-logo.png)](http://www.indava.com/)
