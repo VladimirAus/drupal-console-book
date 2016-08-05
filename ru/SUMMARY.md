@@ -9,9 +9,10 @@
 
 * [Установка](getting/project.md)
   * [Стандартная инсталляция](getting/installer.md)
+  * [Инсталляция на Windows ОС](getting/windows.md)
   * [С помощью Composer](getting/composer.md)
   * [Используя phar файл](getting/download.md)
-  * [Update project](getting/update.md)
+  * [Обновления проекта](getting/update.md)
   
 * [Использование проекта](using/project.md)
   * [Как скопировать конфигурационные файлы](using/how-to-copy-configuration-files.md)
