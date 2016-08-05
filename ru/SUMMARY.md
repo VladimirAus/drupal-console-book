@@ -8,17 +8,17 @@
   * [Где найти Drupal Console?](about/where-do-i-find-the-project.md)
 
 * [Установка](getting/project.md)
-  * [Стандартная инсталляция](getting/installer.md)
-  * [Инсталляция на Windows ОС](getting/windows.md)
+  * [Стандартная установка](getting/installer.md)
+  * [Установка на Windows ОС](getting/windows.md)
   * [С помощью Composer](getting/composer.md)
-  * [Используя phar файл](getting/download.md)
+  * [phar файл](getting/download.md)
   * [Обновления проекта](getting/update.md)
   
 * [Использование проекта](using/project.md)
   * [Как скопировать конфигурационные файлы](using/how-to-copy-configuration-files.md)
   * [Как скачать, установить и запустить Drupal 8](using/how-to-download-install-and-serve-drupal8.md)
-  * [Использование Drupal Console в мульти-сайтовом режиме](using/how-to-use-drupal-console-in-a-multisite-installation.md)
-  * [Использование Drupal Console при удаленной установки](using/how-to-use-drupal-console-in-a-remote-installation.md)
+  * [Использование в мульти-сайтовом режиме](using/how-to-use-drupal-console-in-a-multisite-installation.md)
+  * [Использование при удаленной установке](using/how-to-use-drupal-console-in-a-remote-installation.md)
 
 * [Создание новых комманд](extending/creating-custom-commands.md)
    * [Автоматическая регистрация комманды](extending/registering-commands-automatically.md)
