@@ -1,4 +1,4 @@
-# Installing Drupal Console on Windows
+# Установка на Windows ОС
 On Windows there are two ways to install drupal console. One uses Git Bash, the other uses a Windows command prompt. I recommend using the Git Bash utility from the Git for Windows (previously msysgit) program package, since this is the only way you can use drupal console without prefixing it with php.
 
 ## Using curl from the Git Bash prompt:
