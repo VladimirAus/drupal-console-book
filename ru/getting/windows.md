@@ -1,28 +1,28 @@
 # Установка на Windows ОС
-On Windows there are two ways to install drupal console. One uses Git Bash, the other uses a Windows command prompt. I recommend using the Git Bash utility from the Git for Windows (previously msysgit) program package, since this is the only way you can use drupal console without prefixing it with php.
+Существует два варианта установки Drupal Console на Windows ОС: используя приложение Git Bash или используя коммандную строку Windows ОС. Мы рекомендуем приложение Git Bash из пакета приложений Git for Windows (ранее msysgit), так как это единственный вариант для запуска Drupal Console без префикса `php`.
 
-## Using curl from the Git Bash prompt:
+## Используя команду curl в окне команадной строки Git Bash:
 ```
 $ curl https://drupalconsole.com/installer -L -o drupal.phar
 ```
-## OR run the following from a Windows command prompt:
+## ИЛИ запуск через окно команадной строки Windows ОС:
 ```
 $ php -r "readfile('https://drupalconsole.com/installer');" > drupal.phar
 ```
 
-You can now execute it, supposing php.exe is in your PATH environment variable.
+Теперь можно запустить Drupal Console при условии что `php.exe` приписал в переменной PATH операционной системы.
 
-## Run:
+## Запуск Drupal Console:
 
 ```
 $ php drupal.phar
 ```
 
-If you rename the drupal.phar file to drupal, and copy it next to php.exe, then from the Git Bash window you can run it without prefixing with php.
+Чтобы запустить Drupal Console без префикса `php` в окне команадной строки Git Bash, переименуйте файл `drupal.phar` в `drupal` и скопируйте его в директорию к файлу `php.exe`.
 
-#### You can now execute using:
+#### Теперь Drupal Console можно запустить следующим образом:
 ```
 $ drupal
 ```
 
-**NOTE:** The name `drupal` is just an alias you can name it anything you like.
+**ВНИМАНИЕ:** Имя файла `drupal` - всего лишь псевдоним (алиас) и файлу можно присвоить любое имя.
