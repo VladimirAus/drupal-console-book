@@ -14,7 +14,7 @@
   * [phar файл](getting/download.md)
   * [Обновления проекта](getting/update.md)
   
-* [Использование проекта](using/project.md)
+* [Как пользоваться проектом](using/project.md)
   * [Как скопировать конфигурационные файлы](using/how-to-copy-configuration-files.md)
   * [Как скачать, установить и запустить Drupal 8](using/how-to-download-install-and-serve-drupal8.md)
   * [Использование в мульти-сайтовом режиме](using/how-to-use-drupal-console-in-a-multisite-installation.md)
