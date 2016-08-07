@@ -1,23 +1,28 @@
-# Using the project
+# Как пользоваться проектом
 
-Drupal Console provides two types of commands, `stand alone` and `container aware` commands.
+Команды Drupal Console деляться на два типа: `обособленные` и `зависимые`.
 
-**Stand alone commands:**
-These commands can run outside of a Drupal 8 site root.
+**Обособленные команды:**
+
+Обособленные команды не зависят от наличия установленного Drupal 8 приложения.
  
-**Container aware commands:**
-These commands must be run within a Drupal 8 site root.
+**Зависимые команды:**
 
-### Executing Drupal Console outside a Drupal site root 
-You can run Drupal Console form any directory on your system by using the `--root` option to define the Drupal root to be use in the command execution. 
+Зависимые команды можно запустить только из дериктории, где установлено Drupal 8 приложение.
+
+### Запуск команды из любой директории
+
+Команду Drupal Console можно запустить из любой директории, используя опцию `--root`, указывающую на дерикторию, где установлено Drupal 8 приложение. 
+
 ```
 $ drupal --root=/var/www/drupal8.dev cr all
 ```
 
-**NOTE:** Possible messages when executing Drupal Console outside a Drupal site root and no `--root` option provided.
+**ВНИМАНИЕ:** При запуске Drupal Console без опции `--root` из дериктории, где не установлен Drupal 8, существует вероятность следующих сообщений.
 
-When running the project outside of a Drupal 8 site root, the following message will be shown.  
-> In order to list all of the available commands, you should run this inside a drupal root directory.
+При запуске Drupal Console из дериктории, где не установлен Drupal 8.  
+> Запустите приложение из дериктории, где установлен Drupal, чтобы увидеть все доступние команды.
 
+При запуске Drupal Console из дериктории, где находится, но еще не установлен Drupal 8.
 When running the project within of a Drupal 8 site root, but site is not yet installed, the following message will be shown.
-> In order to list all of the available commands you should install drupal first.
+> Установите Drupal, чтобы увидеть все доступние команды.
