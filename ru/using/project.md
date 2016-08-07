@@ -18,11 +18,10 @@
 $ drupal --root=/var/www/drupal8.dev cr all
 ```
 
-**ВНИМАНИЕ:** При запуске Drupal Console без опции `--root` из дериктории, где не установлен Drupal 8, существует вероятность следующих сообщений.
+**ВНИМАНИЕ:** При запуске Drupal Console без опции `--root` из дериктории, где не установлено Drupal 8 приложение, существует вероятность следующих сообщений.
 
-При запуске Drupal Console из дериктории, где не установлен Drupal 8.  
+При запуске Drupal Console из дериктории, где не установлено Drupal 8 приложение.  
 > Запустите приложение из дериктории, где установлен Drupal, чтобы увидеть все доступние команды.
 
-При запуске Drupal Console из дериктории, где находится, но еще не установлен Drupal 8.
-When running the project within of a Drupal 8 site root, but site is not yet installed, the following message will be shown.
+При запуске Drupal Console из дериктории, где находится, но еще не установлено Drupal 8 приложение.
 > Установите Drupal, чтобы увидеть все доступние команды.
