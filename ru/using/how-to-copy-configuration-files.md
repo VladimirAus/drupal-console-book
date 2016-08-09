@@ -1,11 +1,12 @@
-# How to copy configuration files
-The first task you should do after installing Drupal Console is to execute the `init` command. Executing this command will copy the project configurations files to your `~/.console/` directory. Overriding values on these copied files is how you can change DrupalConsole behaviour.
+# Как скопировать конфигурационные файлы
+
+Перым делом после инсталации Drupal Console запустите команду `init`. `drupal init` скопирует конфигурационные настройки в директорию `~/.console/`. Изменить конфигурационные настройки можно через флаг `--override`
  
  ```
  $ drupal init [--override]
  ```
  
-### Which files are copied when executing the `init` command.
+### Список файлов, которые копирует `init`.
 ```
  ~/.console/ 
  ├── aliases.yml 
