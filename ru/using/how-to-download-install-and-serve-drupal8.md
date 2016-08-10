@@ -1,15 +1,16 @@
-# How to download, install and serve Drupal 8
+# Как скачать, установить и запустить Drupal 8
 
-The easiest way to try Drupal 8 in your local machine is by executing the `chain` command and pass the option `--file=~/.console/chain/quick-start.yml` as shown on the following example.
+Проще всего установить Drupal 8 используя команду `chain` с опцией `--file=~/.console/chain/quick-start.yml` следующим образом:
 
 ```
 $ drupal chain --file=~/.console/chain/quick-start.yml
 ```
-> NOTE: You must execute `drupal init` before in order to copy the `~/.console/chain/quick-start.yml` on your system.
+> ВНИМАНИЕ: Файл `~/.console/chain/quick-start.yml` доступен после инициализации Drupal Console командой `drupal init`.
 
-The `chain` command helps you to automate command execution, allowing you to define an external YAML file containing the definition name, option and arguments of several commands and execute that list based on the sequence defined in the file.
+Команда `chain` автоматизирует выполнение списка команд, прописанных в YAML файле. В файле прописаны имена, опции и аргументы для каждой команды. Команды выполняются по мере появления в файле.
 
-The content of the provided `~/.console/chain/quick-start.yml` file is:
+Код файла `~/.console/chain/quick-start.yml`:
+
 ```
 commands:
   - command: site:new
@@ -32,6 +33,6 @@ commands:
   - command: server
 ```
 
-The previous configuration will execute several commands, in this case commands that will download and install Drupal using SQLite, and finally start the PHP's built in server, now you only need to open your browser and point it to 127.0.0.1:8088.
+Вышеуказанный файл скачивает и устанавливает Drupal с поддержкой базы данных SQLite и запускает вебсайт через встроенный PHP сервер по адресу 127.0.0.1:8088.
 
-You can duplicate or make changes on the provided YAML file, to add commands for download modules `module:download`, install modules `module:install` , import configurations `config:import` and restore your database `database:restore` or any other command provided by DrupalConsole or a custom command by your own module.
+YAML файл можно модифицировать по вашему усмотрению. К примеру, можно добавить дополнительные модули (команда `module:download`), установить скачанные модули (команда `module:install`), импортировать файлы конфигурации (команда `config:import`), восстановить базу данных (команда `database:restore`) или любую команду Drupal Console.
