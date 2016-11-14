@@ -29,7 +29,7 @@ SETX /M PATH "%PATH%;C:\php;C:\sqlite"
 
 ### Конфигурация php.ini
 
-Drupal Console require some extensions. please enable these extensions in your php.ini.
+Drupal Console зависит от следующих PHP-расширений. Убедитесь, что они подключены в файле `php.ini`.
 
 ```
 extension=php_gd2.dll
@@ -38,7 +38,7 @@ extension=php_curl.dll
 extension=php_openssl.dll
 ```
 
-We recommend to enable the following extensions to enable you to use your own language.
+Мы также рекомендуем подключить PHP-расширения для поддержки языков:
 
 ```
 extension=php_intl.dll
@@ -47,7 +47,7 @@ extension=php_mbstring.dll
 
 #### Конфигурация сертификатов
 
-put certificate information provided by Git for Windows.
+Обновите информацию о сертификатах, предоставленных приложением by Git для Windows.
 
 ```
 curl.cainfo = C:\Program Files\Git\usr\ssl\certs\ca-bundle.crt;
@@ -65,10 +65,11 @@ $ composer global require drupal/console:@stable
 $ drupal
 ```
 
-or execute one of the chain available, to execute a quick install execute the following command
+или запустите одну из цепных (chain) комманд. 
+К примеру, для быстой установки Drupal используйте следующую команду
 
 ```
 $ drupal chain --file="C:\Users\username\.console\chain\quick-start.yml"
 ```
 
-**ВНИМАНИЕ:** You have to provide "Windows-style" path for `file` option.
+**ВНИМАНИЕ:** Все пути к папкам для опции `file` должны быть в формате "Windows ОС".
