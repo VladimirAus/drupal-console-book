@@ -1,5 +1,4 @@
 # Обновления проекта
-Drupal 8 is under heavy development, to keep in sync with the latest changes. The easiest and recommended way of updating Drupal Console is using the self-update command.
 Drupal 8 находится в постоянной разработке, соответсвенно и Drupal Console. Самый легкий способ обновления Drupal Console - это использование команды `self-update`.
 
 ## В зависимости от метода установки:
