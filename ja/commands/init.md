@@ -1,12 +1,14 @@
 # init
 設定ファイルをユーザーのホームディレクトリにコピーする
 
-**使い方:**
+**Usage:**
 ```
-$ drupal init [options]
+drupal init [options]
 ```
 
-## 利用可能なオプション
-オプション | 詳細
+## Available options
+Option | Details
 -------|-------------
+--destination | Destination directory to copy files
 --override | 設定ファイルを上書きする
+--autocomplete | Autocomplete tool files flag.

@@ -1,15 +1,25 @@
 # generate:twig:extension
 Generate a Twig extension.
 
-**Használat:**
+**Usage:**
 ```
-$ drupal generate:twig:extension [options]
+drupal generate:twig:extension [options]
+gte
 ```
 
-## Rendelkezésre álló beállítások
-Beállítás | Részletek
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
+--module | A modul neve.
 --name | Twig Extension name
 --class | Class name
---services | Load services from the container.
+--services | Szolgáltatások betöltése a tárolóból.
+
+## Examples
+* Generate a twig extension specifying the module name, the extension name and its class
+```
+drupal generate:twig:extension  \
+  --module="modulename"  \
+  --name="modulename.twig.extension"  \
+  --class="DefaultTwigExtension"
+```

@@ -1,7 +1,7 @@
 # check
 動作環境をチェックする
 
-**使い方:**
+**Usage:**
 ```
-$ drupal check
+drupal check
 ```

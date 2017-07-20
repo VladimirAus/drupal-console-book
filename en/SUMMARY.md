@@ -8,11 +8,9 @@
   * [Where do I find the project?](about/where-do-i-find-the-project.md)
 
 * [Getting the project](getting/project.md)
-  * [Using the Installer](getting/installer.md)
-  * [Installing on Windows](getting/windows.md)
   * [Using Composer](getting/composer.md)
-  * [Download phar file](getting/download.md)
-  * [Update project](getting/update.md)
+  * [Global executable aka Launcher](getting/launcher.md)
+  * [Installing on Windows](getting/windows.md)
   
 * [Using the project](using/project.md)
   * [How to copy configuration files](using/how-to-copy-configuration-files.md)
@@ -21,7 +19,7 @@
   * [How to use Drupal Console in a remote installation](using/how-to-use-drupal-console-in-a-remote-installation.md)
 
 * [Creating custom Commands](extending/creating-custom-commands.md)
-   * [Registering Commands Automatically](extending/registering-commands-automatically.md)
+   * [Registering Commands](extending/registering-commands.md)
    * [Configuring the Command](extending/configuring-the-command.md)
    * [Command Lifecycle](extending/command-lifecycle.md)
    * [Getting Services from the Service Container](extending/getting-services-from-the-service-container.md)
@@ -37,7 +35,7 @@
 * [Available commands](commands/available-commands.md)
   {% include "./commands/available-commands-list.md" %}
 
-* FAQ (Frequently Asked Questions) about Drupal Console
+* [FAQ (Frequently Asked Questions) about Drupal Console](drupal_console_faq/faq.md)
    * [Installation problems](drupal_console_faq/installation-problems.md)
    * [Permissions](drupal_console_faq/permissions.md)
    * [Commands not listed](drupal_console_faq/commands-not-listed.md)

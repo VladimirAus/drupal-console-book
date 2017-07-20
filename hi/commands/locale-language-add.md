@@ -1,12 +1,12 @@
 # locale:language:add
-Add a language to be supported by your site
+एक भाषा को जोड़े जो आप के साइट द्वारा सपोर्ट होना है
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal locale:language:add [arguments]
+drupal locale:language:add [arguments]
 ```
 
-## उपलब्ध तर्क
-तर्क | विवरण
+## Available arguments
+Argument | Details
 ---------|-------------
-language | Language for instance es or Spanish
+language | भाषा उदाहरण es या Spanish

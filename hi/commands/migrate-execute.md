@@ -1,14 +1,14 @@
 # migrate:execute
 अनुप्रयोग के उपलब्ध माइग्रेशन को चलाएं
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal migrate:execute [arguments] [options]
-$ mie  
+drupal migrate:execute [arguments] [options]
+mie
 ```
 
-## उपलब्ध विकल्प
-विकल्प | विवरण
+## Available options
+Option | Details
 -------|-------------
 --site-url | साइट स्रोत URL
 --db-type | commands.migrate.setup.migrations.options.db-type
@@ -19,8 +19,9 @@ $ mie
 --db-prefix | डेटाबेस उपसर्ग
 --db-port | डेटाबेस पोर्ट
 --exclude | वर्जित किये गए माइग्रेशन क्रमांक
+--source-base_path | Local file directory containing your source site (e.g. /var/www/docroot), or your site address (for example http://example.com)
 
-## उपलब्ध तर्क
-तर्क | विवरण
+## Available arguments
+Argument | Details
 ---------|-------------
 migration-ids | माइग्रेशन क्रमांक

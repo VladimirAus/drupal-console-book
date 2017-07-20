@@ -1,13 +1,23 @@
 # site:maintenance
 サイトをメンテナンスモードに切り替える
 
-**使い方:**
+**Usage:**
 ```
-$ drupal site:maintenance [arguments]
-$ sma  
+drupal site:maintenance [arguments]
+sma
 ```
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
 mode | commands.site.maintenance.arguments.mode[on/off]
+
+## Examples
+* Switch on maintenance
+```
+drupal site:maintenance  on
+```
+* Switch off maintenance
+```
+drupal site:maintenance  off
+```

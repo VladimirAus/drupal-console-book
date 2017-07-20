@@ -1,19 +1,19 @@
 # help
 Displays help for a command
 
-**Folosire:**
+**Usage:**
 ```
-$ drupal help [arguments] [options]
+drupal help [arguments] [options]
 ```
 
-## Opțiuni disponibile
-Opțiune | Detalii
+## Available options
+Option | Details
 -------|-------------
 --xml | To output list as XML
 --raw | To output raw command list
 --format | The output format (txt, xml, json, or md)
 
-## Argumente disponibile
-Argument | Detalii
+## Available arguments
+Argument | Details
 ---------|-------------
 command_name | The command name

@@ -1,13 +1,27 @@
 # user:delete
 ユーザーを削除
 
-**使い方:**
+**Usage:**
 ```
-$ drupal user:delete [options]
+drupal user:delete [options]
+ud
 ```
 
-## 利用可能なオプション
-オプション | 詳細
+## Available options
+Option | Details
 -------|-------------
 --user-id | 削除するユーザーID
 --roles | 削除するユーザーに関連付けられたロール
+
+## Examples
+* Delete user specifying the id and the user role
+```
+drupal user:delete  \
+  --user-id="2"
+  --roles='authenticated'
+```
+* Delete user specifying its id
+```
+drupal user:delete  \
+  --user-id="3"
+```

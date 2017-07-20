@@ -1,12 +1,20 @@
 # database:connect
 データベースクライアントを起動
 
-**使い方:**
+**Usage:**
 ```
-$ drupal database:connect [arguments]
+drupal database:connect [arguments]
+dbco
 ```
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
 database | settings.phpのデータベースのキー
+
+## Examples
+* Connects to an specified database, or the default if not arguments passed
+```
+drupal database:connect \
+  <database>
+```

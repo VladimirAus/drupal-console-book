@@ -3,17 +3,18 @@ Chạy đơn vị thử nghiệm từ các thử nghiệm có sẵn cho ứng d�
 
 **Usage:**
 ```
-$ drupal test:run [arguments] [options]
-$ tr  
+drupal test:run [arguments] [options]
+ter
+tr
 ```
 
-## Các tùy chọn có sẵn
-Tùy chọn | Các chi tiết
+## Available options
+Option | Details
 -------|-------------
 --url | commands.test.run.arguments.url
 
-## Các đối số có sẵn
-Đối số | Các chi tiết
+## Available arguments
+Argument | Details
 ---------|-------------
 test-class | Lớp thử nghiệm
 test-methods | Test method(s) to be run

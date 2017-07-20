@@ -1,13 +1,23 @@
 # site:mode
 प्रणाली की कार्य-निष्पादन व्यवस्था को बदलें
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal site:mode [arguments]
-$ smo  
+drupal site:mode [arguments]
+smo
 ```
 
-## उपलब्ध तर्क
-तर्क | विवरण
+## Available arguments
+Argument | Details
 ---------|-------------
 environment | एनवायरनमेंट नाम (dev|prod)
+
+## Examples
+* Switch system to prod
+```
+drupal site:mode  prod
+```
+* Switch system to dev
+```
+drupal site:mode  dev
+```

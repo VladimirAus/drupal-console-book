@@ -1,18 +1,25 @@
 # theme:install
 Instalează tema sau temele în aplicație
 
-**Folosire:**
+**Usage:**
 ```
-$ drupal theme:install [arguments] [options]
-$ ti  
+drupal theme:install [arguments] [options]
+thi
+ti
 ```
 
-## Opțiuni disponibile
-Opțiune | Detalii
+## Available options
+Option | Details
 -------|-------------
 --set-default | Setați tema ca și temă implicită
 
-## Argumente disponibile
-Argument | Detalii
+## Available arguments
+Argument | Details
 ---------|-------------
 theme | commands.theme.install.options.module
+
+## Examples
+* Install theme specifying the name
+```
+drupal theme:install  mytheme
+```

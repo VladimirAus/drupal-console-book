@@ -1,14 +1,14 @@
 # generate:plugin:rest:resource
 Generate plugin rest resource
 
-**使い方:**
+**Usage:**
 ```
-$ drupal generate:plugin:rest:resource [options]
-$ gprr  
+drupal generate:plugin:rest:resource [options]
+gprr
 ```
 
-## 利用可能なオプション
-オプション | 詳細
+## Available options
+Option | Details
 -------|-------------
 --module | モジュール名
 --class | Plugin Rest Resource class
@@ -17,3 +17,15 @@ $ gprr
 --plugin-label | Plugin Rest Resource Label
 --plugin-url | Plugin Rest Resource URL
 --plugin-states | Plugin Rest Resource States
+
+## Examples
+* Generate a rest resource plugin using GET specifying the module name, the class, the plugin id, its label, the target url and the request type
+```
+drupal generate:plugin:rest:resource  \
+  --module="modulename"  \
+  --class="DefaultRestResource"  \
+  --plugin-id="default_rest_resource"  \
+  --plugin-label="Default rest resource"  \
+  --plugin-url="http://rest.resources.example.com"  \
+  --plugin-states='GET'
+```

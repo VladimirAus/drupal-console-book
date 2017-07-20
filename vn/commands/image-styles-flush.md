@@ -3,10 +3,21 @@ Execute flush function by image style or execute all flush images styles
 
 **Usage:**
 ```
-$ drupal image:styles:flush [arguments]
+drupal image:styles:flush [arguments]
+isf
 ```
 
-## Các đối số có sẵn
-Đối số | Các chi tiết
+## Available arguments
+Argument | Details
 ---------|-------------
 styles | The Images Styles name.
+
+## Examples
+* Flush large image style
+```
+drupal image:styles:flush  large
+```
+* Flush thumbnail image style
+```
+drupal image:styles:flush  thumbnail
+```

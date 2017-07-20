@@ -1,12 +1,12 @@
 # locale:language:add
-Add a language to be supported by your site
+Adaugă o limbă ce va avea suport pe situl dvs.
 
-**Folosire:**
+**Usage:**
 ```
-$ drupal locale:language:add [arguments]
+drupal locale:language:add [arguments]
 ```
 
-## Argumente disponibile
-Argument | Detalii
+## Available arguments
+Argument | Details
 ---------|-------------
-language | Language for instance es or Spanish
+language | Limba, de exemplu, es sau Spanish

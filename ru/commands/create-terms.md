@@ -1,18 +1,31 @@
 # create:terms
-The **create:terms** command Create dummy terms for your Drupal 8 application.
+Создание фиктивных терминов для Drupal 8.
 
-**Использование:**
+**Usage:**
 ```
-$ drupal create:terms [arguments] [options] 
+drupal create:terms [arguments] [options]
+crt
 ```
 
-## Доступные опции
-Опция | Описание
+## Available options
+Option | Details
 -------|-------------
---limit | How many terms would you like to create
---name-words | Maximum number of words in term names
+--limit | Сколько терминов вы хотите создать
+--name-words | Максимальное количество слов в именах терминов
 
-## Доступные параметры
-Параметр | Описание
+## Available arguments
+Argument | Details
 ---------|-------------
-vocabularies | Vocabularie(s) to be used in terms creation
+vocabularies | Словари, которые будут использованы при создании терминов
+
+## Examples
+* Provide the vocabulary term name.
+```
+drupal create:terms vocabulary
+```
+* Provide the limit of terms to add and limit of title words.
+```
+drupal create:terms tags \
+  --limit="10" \
+  --name-words="5"
+```

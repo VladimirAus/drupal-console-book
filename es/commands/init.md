@@ -1,13 +1,14 @@
 # init
 Copia los archivos de configuración al directorio home del usuario.
 
-**Uso:**
+**Usage:**
 ```
-$ drupal init [options]
+drupal init [options]
 ```
 
-## Opciones disponibles
-Opción | Detalles
+## Available options
+Option | Details
 -------|-------------
+--destination | Directorio de destino para copiar los archivos
 --override | Sobreescribir los archivos de configuración
---local | Copiar config.yml en el directorio actual
+--autocomplete | Flag para herramienta de autocompletado.

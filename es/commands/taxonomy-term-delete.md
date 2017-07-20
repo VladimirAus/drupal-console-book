@@ -1,12 +1,19 @@
 # taxonomy:term:delete
-commands.taxonomy.term.delete.description
+Elimina términos de taxonomía de un vocabulario, este comando toma el VID como argumento o, si no se pasa ninguno, serán eliminados todos los términos de todos los vocabularios
 
-**Uso:**
+**Usage:**
 ```
-$ drupal taxonomy:term:delete [arguments]
+drupal taxonomy:term:delete [arguments]
+ttd
 ```
 
-## Argumentos disponibles
-Argumento | Detalles
+## Available arguments
+Argument | Details
 ---------|-------------
 vid | 
+
+## Examples
+* Delete all terms of the "tags" vocabulary
+```
+drupal taxonomy:term:delete  tags
+```

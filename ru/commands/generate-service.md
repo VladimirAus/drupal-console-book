@@ -1,17 +1,39 @@
 # generate:service
-The **generate:service** command Generate service
+Генерирует сервис
 
-**Использование:**
+**Usage:**
 ```
-$ drupal generate:service [options] 
-$ gs  
+drupal generate:service [options]
+gs
 ```
 
-## Доступные опции
-Опция | Описание
+## Available options
+Option | Details
 -------|-------------
 --module | Имя модуля.
 --name | commands.generate.service.options.name
---class | Class name
+--class | Имя класса
 --interface | commands.common.service.options.interface
+--interface-name | commands.common.service.options.interface-name
 --services | Загрузка сервисов из контейнера.
+--path-service | Path
+
+## Examples
+* Generate a services without interface specifying the module name, the service name, the class and its path
+```
+drupal generate:service  \
+  --module="modulename"  \
+  --name="modulename.default"  \
+  --class="DefaultService"  \
+  --path-service="/modules/custom/modulename/src/"
+```
+* Generate a services with interface specifying the module name, the service name, the class, the interface name and its path
+```
+drupal generate:service  \
+  --module="modulename"  \
+  --name="modulename.default"  \
+  --class="DefaultService"  \
+  --interface  \
+  --interface-name="InterfaceName"  \
+  --path-service="/modules/custom/modulename/src/"
+```

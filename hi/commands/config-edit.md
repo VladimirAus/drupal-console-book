@@ -1,14 +1,25 @@
 # config:edit
 चयनित व्यवस्था को बदलें।
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal config:edit [arguments]
-$ cdit  
+drupal config:edit [arguments]
+ced
+cdit
 ```
 
-## उपलब्ध तर्क
-तर्क | विवरण
+## Available arguments
+Argument | Details
 ---------|-------------
 config-name | व्यवस्था का नाम।
 editor | संपादक।
+
+## Examples
+* Edit system cron configurations with "vim" (default editor).
+```
+drupal config:edit system.cron
+```
+* Edit system cron configurations with "gedit".
+```
+drupal config:edit system.cron gedit
+```

@@ -1,12 +1,19 @@
 # state:delete
 ステートを削除する
 
-**使い方:**
+**Usage:**
 ```
-$ drupal state:delete [arguments]
+drupal state:delete [arguments]
+std
 ```
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
 name | ステートの名前
+
+## Examples
+* Delete state specifying the state name
+```
+drupal state:delete  comment.maintain_entity_statistics
+```

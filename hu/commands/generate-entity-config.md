@@ -1,18 +1,30 @@
 # generate:entity:config
-Generate a new config entity
+Új konfigurációs entitás létrehozása
 
-**Használat:**
+**Usage:**
 ```
-$ drupal generate:entity:config [options]
-$ gecg  
+drupal generate:entity:config [options]
+gec
+gecg
 ```
 
-## Rendelkezésre álló beállítások
-Beállítás | Részletek
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
---entity-class | The config entity class
---entity-name | The config entity name
---base-path | The base-path for the config entity routes
---label | The label
---bundle-of | Acts as bundle for content entities
+--module | A modul neve.
+--entity-class | A konfigurációs entitás osztálya
+--entity-name | A konfigurációs entitás neve
+--base-path | A konfigurációs entitások útvonalainak alapútvonala
+--label | A felirat
+--bundle-of | A tartalomentitások mezőkötegeként funkcionál
+
+## Examples
+* Generate config entity specifying the module, the entity class, the entity name, its path and label
+```
+drupal generate:entity:config  \
+  --module="modulename"  \
+  --entity-class="DefaultEntity"  \
+  --entity-name="default_entity"  \
+  --base-path="/admin/structure"  \
+  --label="Default entity"
+```

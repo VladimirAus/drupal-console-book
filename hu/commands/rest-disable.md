@@ -1,13 +1,14 @@
 # rest:disable
 REST-erőforrás letiltása
 
-**Használat:**
+**Usage:**
 ```
-$ drupal rest:disable [arguments]
-$ redi  
+drupal rest:disable [arguments]
+red
+redi
 ```
 
-## Rendelkezésre álló argumentumok
-Argumentum | Részletek
+## Available arguments
+Argument | Details
 ---------|-------------
-resource-id | REST-azonosító
+resource-id | Rest ID

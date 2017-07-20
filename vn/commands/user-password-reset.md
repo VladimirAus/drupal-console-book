@@ -3,12 +3,19 @@
 
 **Usage:**
 ```
-$ drupal user:password:reset [arguments]
-$ uspr  
+drupal user:password:reset [arguments]
+upr
+uspr
 ```
 
-## Các đối số có sẵn
-Đối số | Các chi tiết
+## Available arguments
+Argument | Details
 ---------|-------------
 user | ID người dùng
 password | Mật khẩu có định dạng text
+
+## Examples
+* Update password specifying the user id and the new password
+```
+drupal user:password:reset  2 p455w0rd
+```

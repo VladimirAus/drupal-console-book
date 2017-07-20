@@ -1,17 +1,24 @@
 # theme:path
 テーマの相対パスまたは絶対パスを返す
 
-**使い方:**
+**Usage:**
 ```
-$ drupal theme:path [arguments] [options]
+drupal theme:path [arguments] [options]
+thp
 ```
 
-## 利用可能なオプション
-オプション | 詳細
+## Available options
+Option | Details
 -------|-------------
 --absolute | 絶対パスを返す
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
-module | テーマ名 (システム内部名称)
+theme | Theme name
+
+## Examples
+* Get the path of mytheme
+```
+drupal theme:path  mytheme
+```

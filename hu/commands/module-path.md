@@ -1,17 +1,24 @@
 # module:path
 Returns the relative path to the module (or absolute path)
 
-**Használat:**
+**Usage:**
 ```
-$ drupal module:path [arguments] [options]
+drupal module:path [arguments] [options]
+mop
 ```
 
-## Rendelkezésre álló beállítások
-Beállítás | Részletek
+## Available options
+Option | Details
 -------|-------------
 --absolute | Return module absolute path
 
-## Rendelkezésre álló argumentumok
-Argumentum | Részletek
+## Available arguments
+Argument | Details
 ---------|-------------
 module | The Module name (machine name)
+
+## Examples
+* Get the relative path of the module specifying the module name
+```
+drupal module:path  modulename
+```

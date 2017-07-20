@@ -3,11 +3,20 @@ Generate an implementation of hook_update_N()
 
 **Usage:**
 ```
-$ drupal generate:update [options]
+drupal generate:update [options]
+gu
 ```
 
-## Các tùy chọn có sẵn
-Tùy chọn | Các chi tiết
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
+--module | Tên module.
 --update-n | Update Number
+
+## Examples
+* Generate an update N hook implementation specifying the module name and the N value
+```
+drupal generate:update  \
+  --module="modulename"  \
+  --update-n="8001"
+```

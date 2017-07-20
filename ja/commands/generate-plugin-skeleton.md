@@ -1,15 +1,25 @@
 # generate:plugin:skeleton
 Generate an implementation of a skeleton plugin for those plugins Drupal Console do not have a specific generator
 
-**使い方:**
+**Usage:**
 ```
-$ drupal generate:plugin:skeleton [options]
+drupal generate:plugin:skeleton [options]
+gps
 ```
 
-## 利用可能なオプション
-オプション | 詳細
+## Available options
+Option | Details
 -------|-------------
 --module | モジュール名
 --plugin-id | commands.generate.plugin.options.plugin-id
 --class | Plugin class name
 --services | コンテナからサービスを読み込む
+
+## Examples
+* Generate a plugin skeleton specifying module name, the plugin id and the class
+```
+drupal generate:plugin:skeleton  \
+  --module="modulename"  \
+  --plugin-id="link_relation_type"  \
+  --class="DefaultLinkRelationType"
+```

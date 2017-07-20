@@ -3,13 +3,25 @@ Nhập cấu hình tới ứng dụng hiện tại
 
 **Usage:**
 ```
-$ drupal config:import [options]
-$ ci  
+drupal config:import [options]
+ci
 ```
 
-## Các tùy chọn có sẵn
-Tùy chọn | Các chi tiết
+## Available options
+Option | Details
 -------|-------------
---file | Cấu hình đường dẫn file
+--file | Path to an archive file of configuration to import.
 --directory | Path to a directory of configuration to import.
---remove-files | Xoá file sau khi đồng bộ.
+--remove-files | Remove files after synchronization.
+
+## Examples
+* Provide a configuration file
+```
+drupal config:import \
+  --file=/path/to/config/file
+```
+* Provide a configuration directory
+```
+drupal config:import  \
+  --directory=/path/to/config/dir
+```

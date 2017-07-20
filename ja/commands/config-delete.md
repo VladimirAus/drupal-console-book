@@ -1,13 +1,20 @@
 # config:delete
 設定を削除する
 
-**使い方:**
+**Usage:**
 ```
-$ drupal config:delete [arguments]
+drupal config:delete [arguments]
+cd
 ```
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
 type | 設定のタイプ
 name | 設定の名前
+
+## Examples
+* Provide a config type and a config name
+```
+drupal config:delete active all
+```

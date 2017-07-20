@@ -1,17 +1,19 @@
 # translation:pending
-Determine pending translation string in a language or a specific file in a language
+commands.translation.pending.description
 
-**Használat:**
+**Usage:**
 ```
-$ drupal translation:pending [arguments] [options]
+drupal translation:pending [arguments] [options]
+tp
 ```
 
-## Rendelkezésre álló beállítások
-Beállítás | Részletek
+## Available options
+Option | Details
 -------|-------------
---file | Specific file to determine pending translations against English
+--file | commands.translation.pending.options.file
 
-## Rendelkezésre álló argumentumok
-Argumentum | Részletek
+## Available arguments
+Argument | Details
 ---------|-------------
-language | Language to determine pending translations against English
+language | commands.translation.pending.arguments.language
+library | commands.translation.pending.arguments.library

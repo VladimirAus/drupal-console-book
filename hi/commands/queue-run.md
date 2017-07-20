@@ -1,12 +1,13 @@
 # queue:run
 Process the selected queue.
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal queue:run [arguments]
+drupal queue:run [arguments]
+qr
 ```
 
-## उपलब्ध तर्क
-तर्क | विवरण
+## Available arguments
+Argument | Details
 ---------|-------------
 name | Queue name.

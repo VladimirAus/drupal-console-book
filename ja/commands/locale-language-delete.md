@@ -1,12 +1,12 @@
 # locale:language:delete
 サイトでサポートする言語を削除
 
-**使い方:**
+**Usage:**
 ```
-$ drupal locale:language:delete [arguments]
+drupal locale:language:delete [arguments]
 ```
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
 language | es や Spanish のような言語名

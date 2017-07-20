@@ -1,13 +1,20 @@
 # state:override
 ステートキーをオーバーライドする
 
-**使い方:**
+**Usage:**
 ```
-$ drupal state:override [arguments]
+drupal state:override [arguments]
+sto
 ```
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
 key | オーバーライドするステートキー
 value | セットする値
+
+## Examples
+* Override state value specifying the state name and the new value
+```
+drupal state:override  comment.node_comment_statistics_scale "!!float 1"
+```

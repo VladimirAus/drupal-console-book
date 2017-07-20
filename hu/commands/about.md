@@ -1,7 +1,7 @@
 # about
 Alapvető információkat jelenít meg a Drupal Console projektről
 
-**Használat:**
+**Usage:**
 ```
-$ drupal about
+drupal about
 ```

@@ -3,11 +3,18 @@ Xem trạng thái cài đặt hiện tại
 
 **Usage:**
 ```
-$ drupal site:status [options]
-$ ss  
+drupal site:status [options]
+ss
 ```
 
-## Các tùy chọn có sẵn
-Tùy chọn | Các chi tiết
+## Available options
+Option | Details
 -------|-------------
 --format | commands.site.status.options.format
+
+## Examples
+* Get drupal installation status specifying the output format as table
+```
+drupal site:status  \
+  --format="table"
+```

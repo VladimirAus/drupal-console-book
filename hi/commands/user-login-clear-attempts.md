@@ -1,13 +1,14 @@
 # user:login:clear:attempts
 किसी अकाउंट की असफल लोगिन प्रयासो को साफ़ करें।
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal user:login:clear:attempts [arguments]
-$ uslca  
+drupal user:login:clear:attempts [arguments]
+ulca
+uslca
 ```
 
-## उपलब्ध तर्क
-तर्क | विवरण
+## Available arguments
+Argument | Details
 ---------|-------------
 uid | यूजर आईडी।

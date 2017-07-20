@@ -1,13 +1,20 @@
 # user:password:hash
 Generează un hash dintr-o parolă de tip text.
 
-**Folosire:**
+**Usage:**
 ```
-$ drupal user:password:hash [arguments]
-$ usph  
+drupal user:password:hash [arguments]
+uph
+usph
 ```
 
-## Argumente disponibile
-Argument | Detalii
+## Available arguments
+Argument | Details
 ---------|-------------
 password | Parola/Parole in format text
+
+## Examples
+* Get hash of the word "p455w0rd"
+```
+drupal user:password:hash  p455w0rd
+```

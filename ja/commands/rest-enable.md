@@ -1,13 +1,13 @@
 # rest:enable
 Restリソースを有効化する
 
-**使い方:**
+**Usage:**
 ```
-$ drupal rest:enable [arguments]
-$ ree  
+drupal rest:enable [arguments]
+ree
 ```
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
 resource-id | Rest ID

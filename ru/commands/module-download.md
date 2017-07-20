@@ -1,18 +1,29 @@
 # module:download
-The **module:download** command Download module or modules in application
+Скачать модуль или модули в приложение
 
-**Использование:**
+**Usage:**
 ```
-$ drupal module:download [arguments] [options] 
-$ md  
+drupal module:download [arguments] [options]
+mod
+md
 ```
 
-## Доступные опции
-Опция | Описание
+## Available options
+Option | Details
 -------|-------------
---latest | Default to download most recent version
+--path | The path of the contrib project
+--latest | По умолчанию загружать самую последнюю версию
+--composer | Download the module using Composer
+--unstable | commands.module.install.options.unstable
 
-## Доступные параметры
-Параметр | Описание
+## Available arguments
+Argument | Details
 ---------|-------------
-module | Module or modules to be enabled should be separated by a space
+module | Модуль или модули, которые будут включены должны быть разделены пробелом
+
+## Examples
+* Download module specifying module name and its path
+```
+drupal module:download  modulename  \
+  --path="modules/contrib"
+```

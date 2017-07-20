@@ -1,13 +1,13 @@
 # rest:enable
 Activează o resursă REST pentru aplicaţie.
 
-**Folosire:**
+**Usage:**
 ```
-$ drupal rest:enable [arguments]
-$ ree  
+drupal rest:enable [arguments]
+ree
 ```
 
-## Argumente disponibile
-Argument | Detalii
+## Available arguments
+Argument | Details
 ---------|-------------
-resource-id | ID-ul resursei
+resource-id | Rest ID

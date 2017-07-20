@@ -1,15 +1,24 @@
 # generate:authentication:provider
-Generate an Authentication Provider
+प्रमाणन प्रदाता उत्पन्न करें
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal generate:authentication:provider [options]
-$ gap  
+drupal generate:authentication:provider [options]
+gap
 ```
 
-## उपलब्ध विकल्प
-विकल्प | विवरण
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
---class | Authentication Provider class
---provider-id | Provider ID
+--module | मोड्यूल का नाम।
+--class | ऑथेंटिकेशन प्रोवाइडर क्लास
+--provider-id | प्रदाता क्रमांक
+
+## Examples
+* Generate an authentication provider specifying the module, the class and the provider id
+```
+drupal generate:authentication:provider  \
+  --module="modulename"  \
+  --class="DefaultAuthenticationProvider"  \
+  --provider-id="default_authentication_provider"
+```

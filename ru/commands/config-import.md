@@ -1,15 +1,27 @@
 # config:import
-The **config:import** command Импорт конфигурации в текущее приложение.
+Импорт конфигурации в текущее приложение.
 
-**Использование:**
+**Usage:**
 ```
-$ drupal config:import [options] 
-$ ci  
+drupal config:import [options]
+ci
 ```
 
-## Доступные опции
-Опция | Описание
+## Available options
+Option | Details
 -------|-------------
---file | Путь к файлу конфигурации.
+--file | Path to an archive file of configuration to import.
 --directory | Path to a directory of configuration to import.
---remove-files | Удалить файлы после синхронизации.
+--remove-files | Remove files after synchronization.
+
+## Examples
+* Provide a configuration file
+```
+drupal config:import \
+  --file=/path/to/config/file
+```
+* Provide a configuration directory
+```
+drupal config:import  \
+  --directory=/path/to/config/dir
+```

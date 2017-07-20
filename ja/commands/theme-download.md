@@ -1,19 +1,26 @@
 # theme:download
 テーマをダウンロード
 
-**使い方:**
+**Usage:**
 ```
-$ drupal theme:download [arguments] [options]
-$ td  
+drupal theme:download [arguments] [options]
+thd
+td
 ```
 
-## 利用可能なオプション
-オプション | 詳細
+## Available options
+Option | Details
 -------|-------------
 --composer | composerを使用してテーマを管理する
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
 theme | テーマの名前
 version | テーマのバージョン (例: 1.x-dev)
+
+## Examples
+* Download theme specifying name and version
+```
+drupal theme:download  Alina 7.x-1.2
+```

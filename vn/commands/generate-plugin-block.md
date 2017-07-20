@@ -1,19 +1,31 @@
 # generate:plugin:block
-Generate a plugin block
+Tạo một plugin block
 
 **Usage:**
 ```
-$ drupal generate:plugin:block [options]
-$ gpb  
+drupal generate:plugin:block [options]
+gpb
 ```
 
-## Các tùy chọn có sẵn
-Tùy chọn | Các chi tiết
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
---class | Plugin class name
---label | Plugin label
+--module | Tên module.
+--class | Tên lớp plugin
+--label | Nhãn plugin
 --plugin-id | Plugin id
---theme-region | Theme region to render Plugin Block
---inputs | Create inputs in a form.
---services | Load services from the container.
+--theme-region | Theme region để render Plugin Block
+--inputs | Tạo các đầu vào trong một form.
+--services | Nạp các dịch vụ từ container.
+
+## Examples
+* Generate a plugin block in the header region with an input field specifying the module name, the class, the label, its id, the region and the input
+```
+drupal generate:plugin:block  \
+  --module="modulename"  \
+  --class="DefaultBlock"  \
+  --label="Default block"  \
+  --plugin-id="default_block"  \
+  --theme-region="header"  \
+  --inputs='"name":"inputtext", "type":"text_format", "label":"InputText", "options":"", "description":"Just an input text", "maxlength":"", "size":"", "default_value":"", "weight":"0", "fieldset":""'
+```

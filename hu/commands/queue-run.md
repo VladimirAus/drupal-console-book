@@ -1,12 +1,13 @@
 # queue:run
 Process the selected queue.
 
-**Használat:**
+**Usage:**
 ```
-$ drupal queue:run [arguments]
+drupal queue:run [arguments]
+qr
 ```
 
-## Rendelkezésre álló argumentumok
-Argumentum | Részletek
+## Available arguments
+Argument | Details
 ---------|-------------
 name | Queue name.

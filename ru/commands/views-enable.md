@@ -1,13 +1,23 @@
 # views:enable
-The **views:enable** command Включить представление
+Включить представление
 
-**Использование:**
+**Usage:**
 ```
-$ drupal views:enable [arguments] 
-$ ve  
+drupal views:enable [arguments]
+ve
 ```
 
-## Доступные параметры
-Параметр | Описание
+## Available arguments
+Argument | Details
 ---------|-------------
-view-id | ID Представления
+view-id | commands.views.debug.arguments.view-id
+
+## Examples
+* Enable content view
+```
+drupal views:enable  content
+```
+* Enable frontpage view
+```
+drupal views:enable  frontpage
+```

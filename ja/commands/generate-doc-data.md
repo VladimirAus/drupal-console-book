@@ -1,12 +1,13 @@
 # generate:doc:data
-コマンドのためのドキュメントを生成する
+commands.generate.doc.data.description
 
-**使い方:**
+**Usage:**
 ```
-$ drupal generate:doc:data [options]
+drupal generate:doc:data [options]
+gdda
 ```
 
-## 利用可能なオプション
-オプション | 詳細
+## Available options
+Option | Details
 -------|-------------
---file | コマンドデータを出力するファイル名
+--file | commands.generate.doc.data.options.file

@@ -3,10 +3,11 @@ Process the selected queue.
 
 **Usage:**
 ```
-$ drupal queue:run [arguments]
+drupal queue:run [arguments]
+qr
 ```
 
-## Các đối số có sẵn
-Đối số | Các chi tiết
+## Available arguments
+Argument | Details
 ---------|-------------
 name | Queue name.

@@ -3,11 +3,18 @@ Delete configuration
 
 **Usage:**
 ```
-$ drupal config:delete [arguments]
+drupal config:delete [arguments]
+cd
 ```
 
-## Các đối số có sẵn
-Đối số | Các chi tiết
+## Available arguments
+Argument | Details
 ---------|-------------
 type | Configuration type.
 name | Configuration name.
+
+## Examples
+* Provide a config type and a config name
+```
+drupal config:delete active all
+```

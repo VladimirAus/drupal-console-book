@@ -1,14 +1,15 @@
 # generate:entity:content
-The **generate:entity:content** command Generate a new content entity
+Generate a new content entity
 
-**Использование:**
+**Usage:**
 ```
-$ drupal generate:entity:content [options] 
-$ gect  
+drupal generate:entity:content [options]
+geco
+gect
 ```
 
-## Доступные опции
-Опция | Описание
+## Available options
+Option | Details
 -------|-------------
 --module | Имя модуля.
 --entity-class | The content entity class
@@ -16,3 +17,27 @@ $ gect
 --base-path | The base-path for the content entity routes
 --label | The label
 --has-bundles | Entity has bundles
+--is-translatable | Content entity translatable
+--revisionable | commands.generate.entity.content.options.revisionable
+
+## Examples
+* Generate a content entity specifying the module, the entity class, the entity name, its path and label
+```
+drupal generate:entity:content  \
+  --module="modulename"  \
+  --entity-class="DefaultEntity"  \
+  --entity-name="default_entity"  \
+  --base-path="/admin/structure"  \
+  --label="Default entity"
+```
+* Generate a translatable and revisionable content entity specifying the module, the entity class, the entity name, its path and label
+```
+drupal generate:entity:content  \
+  --module="modulename"  \
+  --entity-class="DefaultEntity"  \
+  --entity-name="default_entity"  \
+  --base-path="/admin/structure"  \
+  --label="Default entity"  \
+  --is-translatable  \
+  --revisionable
+```

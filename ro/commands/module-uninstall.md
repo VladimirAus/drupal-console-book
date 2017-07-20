@@ -1,19 +1,25 @@
 # module:uninstall
 Dezinstalează un modul sau mai multe din aplicaţie.
 
-**Folosire:**
+**Usage:**
 ```
-$ drupal module:uninstall [arguments] [options]
-$ mou  
+drupal module:uninstall [arguments] [options]
+mou
 ```
 
-## Opțiuni disponibile
-Opțiune | Detalii
+## Available options
+Option | Details
 -------|-------------
 --force | Do you want to ignore dependencies and forcefully uninstall the module?
 --composer | Uninstalls the module using Composer
 
-## Argumente disponibile
-Argument | Detalii
+## Available arguments
+Argument | Details
 ---------|-------------
 module | Enter module name
+
+## Examples
+* Uninstall the module specifying the module name
+```
+drupal module:uninstall  modulename
+```

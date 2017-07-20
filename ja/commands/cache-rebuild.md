@@ -1,23 +1,23 @@
 # cache:rebuild
 キャッシュのクリアと再生成
 
-**使い方:**
+**Usage:**
 ```
-$ drupal cache:rebuild [arguments]
-$ cr  
+drupal cache:rebuild [arguments]
+cr
 ```
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
 cache | クリアするキャッシュ名
 
-## 例
+## Examples
 * 全てのキャッシュを再生成
 ```
-$ drupal cr all
+drupal cr all
 ```
 * discovery キャッシュを再生成
 ```
-$ drupal cr discovery
+drupal cr discovery
 ```

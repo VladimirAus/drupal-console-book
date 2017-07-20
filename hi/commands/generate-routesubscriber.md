@@ -1,14 +1,24 @@
 # generate:routesubscriber
-Generate a RouteSubscriber
+RouteSubscriber उत्पन्न करे.
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal generate:routesubscriber [options]
+drupal generate:routesubscriber [options]
+gr
 ```
 
-## उपलब्ध विकल्प
-विकल्प | विवरण
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
---name | Service name
---class | Class name
+--module | मोड्यूल का नाम।
+--name | सेवा का नाम
+--class | कक्षा का नाम
+
+## Examples
+* Generate a route subscriber specifying the module name, the route name and its class
+```
+drupal generate:routesubscriber  \
+  --module="modulename"  \
+  --name="modulename.route_subscriber"  \
+  --class="RouteSubscriber"
+```

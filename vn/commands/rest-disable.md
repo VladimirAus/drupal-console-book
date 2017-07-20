@@ -3,11 +3,12 @@ Tắt một tài nguyên rest cho ứng dụng
 
 **Usage:**
 ```
-$ drupal rest:disable [arguments]
-$ redi  
+drupal rest:disable [arguments]
+red
+redi
 ```
 
-## Các đối số có sẵn
-Đối số | Các chi tiết
+## Available arguments
+Argument | Details
 ---------|-------------
 resource-id | Rest ID

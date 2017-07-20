@@ -1,12 +1,14 @@
 # init
 उपयोगकर्ता के होम डायरेक्टरी के लिए कॉन्फ़िगरेशन फाइल कॉपी किया है।
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal init [options]
+drupal init [options]
 ```
 
-## उपलब्ध विकल्प
-विकल्प | विवरण
+## Available options
+Option | Details
 -------|-------------
+--destination | Destination directory to copy files
 --override | ओवरराइड कफगुरशंस फाइल्स
+--autocomplete | Autocomplete tool files flag.

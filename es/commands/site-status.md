@@ -1,12 +1,20 @@
 # site:status
 Ver el estatus de la instalación actual de Drupal
 
-**Uso:**
+**Usage:**
 ```
-$ drupal site:status [options]
+drupal site:status [options]
+ss
 ```
 
-## Opciones disponibles
-Opción | Detalles
+## Available options
+Option | Details
 -------|-------------
 --format | commands.site.status.options.format
+
+## Examples
+* Get drupal installation status specifying the output format as table
+```
+drupal site:status  \
+  --format="table"
+```

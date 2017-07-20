@@ -1,12 +1,19 @@
 # database:client
-The **database:client** command Запуск клиента БД, если он доступен
+Запуск клиента базы данных, если он доступен
 
-**Использование:**
+**Usage:**
 ```
-$ drupal database:client [arguments] 
+drupal database:client [arguments]
+dbc
 ```
 
-## Доступные параметры
-Параметр | Описание
+## Available arguments
+Argument | Details
 ---------|-------------
-database | Ключ БД из settings.php
+database | Ключ базы данных из settings.php
+
+## Examples
+* Launch the default client or could launch another regarding the specification on the argument
+```
+drupal database:client <database>
+```

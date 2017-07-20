@@ -1,13 +1,23 @@
 # site:mode
 システムのパフォーマンス設定を切り替える
 
-**使い方:**
+**Usage:**
 ```
-$ drupal site:mode [arguments]
-$ smo  
+drupal site:mode [arguments]
+smo
 ```
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
 environment | Environment name [dev, prod]
+
+## Examples
+* Switch system to prod
+```
+drupal site:mode  prod
+```
+* Switch system to dev
+```
+drupal site:mode  dev
+```

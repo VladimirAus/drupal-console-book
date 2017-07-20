@@ -1,12 +1,19 @@
 # database:client
 データベースクライアントを起動
 
-**使い方:**
+**Usage:**
 ```
-$ drupal database:client [arguments]
+drupal database:client [arguments]
+dbc
 ```
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
 database | settings.phpのデータベースのキー
+
+## Examples
+* Launch the default client or could launch another regarding the specification on the argument
+```
+drupal database:client <database>
+```

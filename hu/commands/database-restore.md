@@ -1,17 +1,25 @@
 # database:restore
 Adatbázis szerkezetének és tartalmának visszaállítása.
 
-**Használat:**
+**Usage:**
 ```
-$ drupal database:restore [arguments] [options]
+drupal database:restore [arguments] [options]
+dbr
 ```
 
-## Rendelkezésre álló beállítások
-Beállítás | Részletek
+## Available options
+Option | Details
 -------|-------------
 --file | Az adatbázis biztonsági mentésének fájlneve
 
-## Rendelkezésre álló argumentumok
-Argumentum | Részletek
+## Available arguments
+Argument | Details
 ---------|-------------
 database | Adatbáziskulcs a settings.php fájlból
+
+## Examples
+* Restore the database file dump to the database default or another one specified
+```
+drupal database:restore \
+  --file='/srv/dump/db.sql'
+```

@@ -1,14 +1,21 @@
 # update:execute
 Egy modul adott Update N függvényének végrehajtása, vagy az összes végrehajtása
 
-**Használat:**
+**Usage:**
 ```
-$ drupal update:execute [arguments]
-$ upe  
+drupal update:execute [arguments]
+upex
+upe
 ```
 
-## Rendelkezésre álló argumentumok
-Argumentum | Részletek
+## Available arguments
+Argument | Details
 ---------|-------------
 module | A modul neve.
 update-n | Végrehajtandó adott Update N függvény
+
+## Examples
+* Update all entities
+```
+drupal update:execute
+```

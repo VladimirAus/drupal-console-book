@@ -1,17 +1,24 @@
 # module:path
 モジュールの相対パスまたは絶対パスを返す
 
-**使い方:**
+**Usage:**
 ```
-$ drupal module:path [arguments] [options]
+drupal module:path [arguments] [options]
+mop
 ```
 
-## 利用可能なオプション
-オプション | 詳細
+## Available options
+Option | Details
 -------|-------------
 --absolute | 絶対パスを返す
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
 module | モジュール名 (システム内部名称)
+
+## Examples
+* Get the relative path of the module specifying the module name
+```
+drupal module:path  modulename
+```

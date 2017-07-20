@@ -1,8 +1,15 @@
 # cron:release
 Cronのシステムロックを解放
 
-**使い方:**
+**Usage:**
 ```
-$ drupal cron:release
-$ crr  
+drupal cron:release
+cror
+crr
+```
+
+## Examples
+* Execute the cron globally
+```
+drupal cron:execute
 ```

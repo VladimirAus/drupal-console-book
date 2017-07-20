@@ -1,19 +1,19 @@
 # list
 Enlista comandos
 
-**Uso:**
+**Usage:**
 ```
-$ drupal list [arguments] [options]
+drupal list [arguments] [options]
 ```
 
-## Opciones disponibles
-Opción | Detalles
+## Available options
+Option | Details
 -------|-------------
 --xml | Para desplegar la lista como XML
 --raw | Para desplegar un lista completa de comandos
 --format | Formato de salida (txt, xml, json, or md)
 
-## Argumentos disponibles
-Argumento | Detalles
+## Available arguments
+Argument | Details
 ---------|-------------
 namespace | Nombre del espacio de nombres

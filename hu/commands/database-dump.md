@@ -1,17 +1,31 @@
 # database:dump
 Adatbázis szerkezetének és tartalmának kiíratása
 
-**Használat:**
+**Usage:**
 ```
-$ drupal database:dump [arguments] [options]
+drupal database:dump [arguments] [options]
+dbdu
 ```
 
-## Rendelkezésre álló beállítások
-Beállítás | Részletek
+## Available options
+Option | Details
 -------|-------------
---file | commands.database.dump.option.file
+--file | Az adatbázis biztonsági mentésének fájlneve
+--gz | Pass this option if you want the sql result file gzipped
 
-## Rendelkezésre álló argumentumok
-Argumentum | Részletek
+## Available arguments
+Argument | Details
 ---------|-------------
 database | Adatbáziskulcs a settings.php fájlból
+
+## Examples
+* Dump default database or the one specified on the argument
+```
+drupal database:dump \
+  <database>
+```
+* Dump in gz compressed format
+```
+drupal database:dump \
+  --gz
+```

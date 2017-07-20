@@ -1,13 +1,23 @@
 # views:enable
 Activează un View
 
-**Folosire:**
+**Usage:**
 ```
-$ drupal views:enable [arguments]
-$ ve  
+drupal views:enable [arguments]
+ve
 ```
 
-## Argumente disponibile
-Argument | Detalii
+## Available arguments
+Argument | Details
 ---------|-------------
-view-id | ID-ul view-ului
+view-id | commands.views.debug.arguments.view-id
+
+## Examples
+* Enable content view
+```
+drupal views:enable  content
+```
+* Enable frontpage view
+```
+drupal views:enable  frontpage
+```

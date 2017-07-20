@@ -1,18 +1,25 @@
 # site:import:local
 Import/Configure an existing local Drupal project
 
-**使い方:**
+**Usage:**
 ```
-$ drupal site:import:local [arguments] [options]
+drupal site:import:local [arguments] [options]
+sil
 ```
 
-## 利用可能なオプション
-オプション | 詳細
+## Available options
+Option | Details
 -------|-------------
 --environment | Name of the environment that is going to be imported
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
 name | Name that will be used to generate the site config
 directory | Existing Drupal root directory
+
+## Examples
+* Import local drupal project specifying the site name and the path
+```
+drupal site:import:local  SiteName /private/var/www/vhost/anexusit/drupal8.dev/web
+```

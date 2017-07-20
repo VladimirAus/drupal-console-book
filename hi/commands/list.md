@@ -1,19 +1,19 @@
 # list
 कमांड की सूची
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal list [arguments] [options]
+drupal list [arguments] [options]
 ```
 
-## उपलब्ध विकल्प
-विकल्प | विवरण
+## Available options
+Option | Details
 -------|-------------
 --xml | XML के रूप में उत्पादन सूची
 --raw | रॉ कमांड की उत्पादन सूची
 --format | आउटपुट फॉर्मेट (txt, xml, json, or md)
 
-## उपलब्ध तर्क
-तर्क | विवरण
+## Available arguments
+Argument | Details
 ---------|-------------
 namespace | नेमस्पेस का नाम

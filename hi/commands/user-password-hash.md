@@ -1,13 +1,20 @@
 # user:password:hash
 सरल पासवर्ड से हैश उत्पन्न करें।
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal user:password:hash [arguments]
-$ usph  
+drupal user:password:hash [arguments]
+uph
+usph
 ```
 
-## उपलब्ध तर्क
-तर्क | विवरण
+## Available arguments
+Argument | Details
 ---------|-------------
 password | पासवर्ड(स) टेक्स्ट फॉर्मेट में
+
+## Examples
+* Get hash of the word "p455w0rd"
+```
+drupal user:password:hash  p455w0rd
+```

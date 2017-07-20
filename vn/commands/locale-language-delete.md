@@ -1,12 +1,12 @@
 # locale:language:delete
-Delete a language to be supported by your site
+Xóa một ngôn ngữ được hỗ trợ bởi site cuuar bạn
 
 **Usage:**
 ```
-$ drupal locale:language:delete [arguments]
+drupal locale:language:delete [arguments]
 ```
 
-## Các đối số có sẵn
-Đối số | Các chi tiết
+## Available arguments
+Argument | Details
 ---------|-------------
-language | Language for instance es or Spanish
+language | Ngôn ngữ ví sụ như es hoặc Spanish

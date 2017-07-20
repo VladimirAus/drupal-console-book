@@ -1,12 +1,23 @@
 # site:mode
 Cambiar la configuración de rendimiento del sistema
 
-**Uso:**
+**Usage:**
 ```
-$ drupal site:mode [arguments]
+drupal site:mode [arguments]
+smo
 ```
 
-## Argumentos disponibles
-Argumento | Detalles
+## Available arguments
+Argument | Details
 ---------|-------------
 environment | Nombre de entorno
+
+## Examples
+* Switch system to prod
+```
+drupal site:mode  prod
+```
+* Switch system to dev
+```
+drupal site:mode  dev
+```

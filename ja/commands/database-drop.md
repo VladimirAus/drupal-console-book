@@ -1,12 +1,20 @@
 # database:drop
 データベースから全てのテーブルを削除
 
-**使い方:**
+**Usage:**
 ```
-$ drupal database:drop [arguments]
+drupal database:drop [arguments]
+dbd
 ```
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
 database | settings.phpのデータベースのキー
+
+## Examples
+* Drop the tables on the database specified on the argument
+```
+drupal database:drop \
+  <database>
+```

@@ -1,0 +1,14 @@
+# debug:config:settings
+Menampilkan key:value terkini pada berkas settings.
+
+**Usage:**
+```
+drupal debug:config:settings
+dcs
+```
+
+## Examples
+* Displays key:value as per the settings file
+```
+drupal debug:config:settings
+```

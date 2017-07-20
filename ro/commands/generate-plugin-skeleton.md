@@ -1,15 +1,25 @@
 # generate:plugin:skeleton
 Generate an implementation of a skeleton plugin for those plugins Drupal Console do not have a specific generator
 
-**Folosire:**
+**Usage:**
 ```
-$ drupal generate:plugin:skeleton [options]
+drupal generate:plugin:skeleton [options]
+gps
 ```
 
-## Opțiuni disponibile
-Opțiune | Detalii
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
+--module | Numele Modulului.
 --plugin-id | commands.generate.plugin.options.plugin-id
---class | Plugin class name
---services | Load services from the container.
+--class | Numele clasei pluginului
+--services | Încarcă serviciile din container.
+
+## Examples
+* Generate a plugin skeleton specifying module name, the plugin id and the class
+```
+drupal generate:plugin:skeleton  \
+  --module="modulename"  \
+  --plugin-id="link_relation_type"  \
+  --class="DefaultLinkRelationType"
+```

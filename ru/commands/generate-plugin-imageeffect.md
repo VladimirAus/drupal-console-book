@@ -1,16 +1,28 @@
 # generate:plugin:imageeffect
-The **generate:plugin:imageeffect** command Generate image effect plugin.
+Generate image effect plugin.
 
-**Использование:**
+**Usage:**
 ```
-$ drupal generate:plugin:imageeffect [options] 
+drupal generate:plugin:imageeffect [options]
+gpie
 ```
 
-## Доступные опции
-Опция | Описание
+## Available options
+Option | Details
 -------|-------------
 --module | Имя модуля.
 --class | Plugin class name
 --label | Plugin label
 --plugin-id | Plugin id
 --description | Plugin Description
+
+## Examples
+* Generate a image effect plugin specifying the module name, the class, its label, the plugin id and a description
+```
+drupal generate:plugin:imageeffect  \
+  --module="modulename"  \
+  --class="DefaultImageEffect"  \
+  --label="Default image effect"  \
+  --plugin-id="default_image_effect"  \
+  --description="My Image Effect"
+```

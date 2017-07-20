@@ -1,12 +1,20 @@
 # database:connect
-The **database:connect** command Запуск клиента БД, если он доступен
+Показывает соединение с базой данных
 
-**Использование:**
+**Usage:**
 ```
-$ drupal database:connect [arguments] 
+drupal database:connect [arguments]
+dbco
 ```
 
-## Доступные параметры
-Параметр | Описание
+## Available arguments
+Argument | Details
 ---------|-------------
-database | Ключ БД из settings.php
+database | Ключ базы данных из settings.php
+
+## Examples
+* Connects to an specified database, or the default if not arguments passed
+```
+drupal database:connect \
+  <database>
+```

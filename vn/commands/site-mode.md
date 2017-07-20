@@ -3,11 +3,21 @@ Chuyển đổi cấu hình hiệu năng của hệ thống
 
 **Usage:**
 ```
-$ drupal site:mode [arguments]
-$ smo  
+drupal site:mode [arguments]
+smo
 ```
 
-## Các đối số có sẵn
-Đối số | Các chi tiết
+## Available arguments
+Argument | Details
 ---------|-------------
 environment | Tên môi trường (dev|prod)
+
+## Examples
+* Switch system to prod
+```
+drupal site:mode  prod
+```
+* Switch system to dev
+```
+drupal site:mode  dev
+```

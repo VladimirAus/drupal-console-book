@@ -1,13 +1,25 @@
 # cron:execute
 Execută cron-ul direct dintr-un modul sau din toate
 
-**Folosire:**
+**Usage:**
 ```
-$ drupal cron:execute [arguments]
-$ cre  
+drupal cron:execute [arguments]
+croe
+cre
 ```
 
-## Argumente disponibile
-Argument | Detalii
+## Available arguments
+Argument | Details
 ---------|-------------
 module | Numele Modulului.
+
+## Examples
+* Execute the cron globally
+```
+drupal cron:execute
+```
+* Execute the cron on the specified module
+```
+drupal cron:execute \
+  <module>
+```

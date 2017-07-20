@@ -1,13 +1,14 @@
 # rest:disable
 अनुप्रयोग में REST संसाधन अक्षम करें|
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal rest:disable [arguments]
-$ redi  
+drupal rest:disable [arguments]
+red
+redi
 ```
 
-## उपलब्ध तर्क
-तर्क | विवरण
+## Available arguments
+Argument | Details
 ---------|-------------
-resource-id | Rest क्रमांक
+resource-id | Rest ID

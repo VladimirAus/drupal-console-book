@@ -1,14 +1,14 @@
 # migrate:execute
 Execute a migration available for application
 
-**使い方:**
+**Usage:**
 ```
-$ drupal migrate:execute [arguments] [options]
-$ mie  
+drupal migrate:execute [arguments] [options]
+mie
 ```
 
-## 利用可能なオプション
-オプション | 詳細
+## Available options
+Option | Details
 -------|-------------
 --site-url | Site Source URL
 --db-type | commands.migrate.setup.migrations.options.db-type
@@ -19,8 +19,9 @@ $ mie
 --db-prefix | Database Prefix
 --db-port | Database Port
 --exclude | Migration id(s) to exclude
+--source-base_path | Local file directory containing your source site (e.g. /var/www/docroot), or your site address (for example http://example.com)
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
 migration-ids | Migration id(s)

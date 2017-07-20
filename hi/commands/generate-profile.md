@@ -1,17 +1,30 @@
 # generate:profile
-Generate a profile.
+प्रोफाइल उत्पन्न करे.
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal generate:profile [options]
+drupal generate:profile [options]
+gpr
 ```
 
-## उपलब्ध विकल्प
-विकल्प | विवरण
+## Available options
+Option | Details
 -------|-------------
---profile | The profile name
---machine-name | The machine name (lowercase and underscore only)
---description | Profile description
---core | Core version
---dependencies | Module dependencies separated by commas (i.e. context, panels)
---distribution | The distribution name
+--profile | प्रोफाइल नाम
+--machine-name | मशीन का नाम (लोअरकेस और अंडरस्कोर केवल)
+--description | प्रोफाइल विवरण
+--core | कोर संस्करण
+--dependencies | मॉड्यूल निर्भरता अल्पविराम से अलग किया जाता है (जेसे context, panels)
+--themes | commands.generate.profile.options.themes
+--distribution | वितरण नाम
+
+## Examples
+* Generate a profile specifying the profile name, the machine name, a description, the core and its module dependencies
+```
+drupal generate:profile  \
+  --profile="NewProfileName"  \
+  --machine-name="newprofilename"  \
+  --description="My Useful Profile"  \
+  --core="8.x"  \
+  --dependencies="modulename"
+```

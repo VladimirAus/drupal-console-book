@@ -3,12 +3,19 @@ Tiến hành một hàm cụ thể cập nhật N trong một module, hoặc ti�
 
 **Usage:**
 ```
-$ drupal update:execute [arguments]
-$ upe  
+drupal update:execute [arguments]
+upex
+upe
 ```
 
-## Các đối số có sẵn
-Đối số | Các chi tiết
+## Available arguments
+Argument | Details
 ---------|-------------
 module | Tên module.
 update-n | Hàm cập nhật N cụ thể để được tiến hành
+
+## Examples
+* Update all entities
+```
+drupal update:execute
+```

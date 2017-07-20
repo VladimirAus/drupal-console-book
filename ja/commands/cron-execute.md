@@ -1,13 +1,25 @@
 # cron:execute
 モジュール単位、もしくは全てのcronを実行
 
-**使い方:**
+**Usage:**
 ```
-$ drupal cron:execute [arguments]
-$ cre  
+drupal cron:execute [arguments]
+croe
+cre
 ```
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
 module | モジュール名
+
+## Examples
+* Execute the cron globally
+```
+drupal cron:execute
+```
+* Execute the cron on the specified module
+```
+drupal cron:execute \
+  <module>
+```

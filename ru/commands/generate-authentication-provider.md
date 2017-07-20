@@ -1,15 +1,24 @@
 # generate:authentication:provider
-The **generate:authentication:provider** command Generate an Authentication Provider
+Generate an Authentication Provider
 
-**Использование:**
+**Usage:**
 ```
-$ drupal generate:authentication:provider [options] 
-$ gap  
+drupal generate:authentication:provider [options]
+gap
 ```
 
-## Доступные опции
-Опция | Описание
+## Available options
+Option | Details
 -------|-------------
 --module | Имя модуля.
 --class | Authentication Provider class
 --provider-id | Provider ID
+
+## Examples
+* Generate an authentication provider specifying the module, the class and the provider id
+```
+drupal generate:authentication:provider  \
+  --module="modulename"  \
+  --class="DefaultAuthenticationProvider"  \
+  --provider-id="default_authentication_provider"
+```

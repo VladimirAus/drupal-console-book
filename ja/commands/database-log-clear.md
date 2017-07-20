@@ -1,19 +1,34 @@
 # database:log:clear
 DbLogからイベントを削除する
 
-**使い方:**
+**Usage:**
 ```
-$ drupal database:log:clear [arguments] [options]
+drupal database:log:clear [arguments] [options]
+dblc
 ```
 
-## 利用可能なオプション
-オプション | 詳細
+## Available options
+Option | Details
 -------|-------------
 --type | イベントを特定のタイプでフィルタする
 --severity | イベントを特定の重要度のレベルでフィルタする
 --user-id | イベントを特定のユーザーIDでフィルタする
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
 event-id | DBLogのイベントID
+
+## Examples
+* Clear the database log from DBLog table
+```
+drupal database:log:clear \
+  <database>
+```
+* Clear the database log from DBLog table using filters
+```
+drupal database:log:clear \
+  <database> \
+  --type=TYPE \
+  --severity=SEVERITY
+```

@@ -1,12 +1,17 @@
 # exec
 Ejecutar un comando externo.
 
-**Uso:**
+**Usage:**
 ```
-$ drupal exec [arguments]
+drupal exec [arguments] [options]
 ```
 
-## Argumentos disponibles
-Argumento | Detalles
+## Available options
+Option | Details
+-------|-------------
+--working-directory | El directorio actual.
+
+## Available arguments
+Argument | Details
 ---------|-------------
 bin | Nombre del ejecutable

@@ -1,7 +1,8 @@
 # site:statistics
 Show the current statistics of website.
 
-**Folosire:**
+**Usage:**
 ```
-$ drupal site:statistics
+drupal site:statistics
+sst
 ```

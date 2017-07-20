@@ -3,11 +3,18 @@ Quay lại một url đăng nhập của người dùng một lần.
 
 **Usage:**
 ```
-$ drupal user:login:url [arguments]
-$ uslu  
+drupal user:login:url [arguments]
+ulu
+uslu
 ```
 
-## Các đối số có sẵn
-Đối số | Các chi tiết
+## Available arguments
+Argument | Details
 ---------|-------------
 user-id | ID người dùng.
+
+## Examples
+* Get one time login url for user id 1
+```
+drupal user:login:url  1
+```

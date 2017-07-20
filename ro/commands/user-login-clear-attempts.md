@@ -1,13 +1,14 @@
 # user:login:clear:attempts
 Şterge autentificările eşuate pentru un cont.
 
-**Folosire:**
+**Usage:**
 ```
-$ drupal user:login:clear:attempts [arguments]
-$ uslca  
+drupal user:login:clear:attempts [arguments]
+ulca
+uslca
 ```
 
-## Argumente disponibile
-Argument | Detalii
+## Available arguments
+Argument | Details
 ---------|-------------
 uid | ID utilizator.

@@ -1,12 +1,12 @@
 # locale:language:delete
-The **locale:language:delete** command DElete a language to be supported by your site
+Удалить поддержку языка с вашего сайта
 
-**Использование:**
+**Usage:**
 ```
-$ drupal locale:language:delete [arguments] 
+drupal locale:language:delete [arguments]
 ```
 
-## Доступные параметры
-Параметр | Описание
+## Available arguments
+Argument | Details
 ---------|-------------
-language | Language for instance es or Spanish
+language | Язык, например: es или Spanish

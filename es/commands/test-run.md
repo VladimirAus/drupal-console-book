@@ -1,19 +1,20 @@
 # test:run
 Ejecuta un test unitario de los disponibles en la aplicación
 
-**Uso:**
+**Usage:**
 ```
-$ drupal test:run [arguments] [options]
-$ tr  
+drupal test:run [arguments] [options]
+ter
+tr
 ```
 
-## Opciones disponibles
-Opción | Detalles
+## Available options
+Option | Details
 -------|-------------
 --url | commands.test.run.arguments.url
 
-## Argumentos disponibles
-Argumento | Detalles
+## Available arguments
+Argument | Details
 ---------|-------------
 test-class | Clase del test
 test-methods | Métodos de prueba a ejecutar

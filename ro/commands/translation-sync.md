@@ -1,17 +1,19 @@
 # translation:sync
-Sync translation files
+commands.translation.sync.description
 
-**Folosire:**
+**Usage:**
 ```
-$ drupal translation:sync [arguments] [options]
+drupal translation:sync [arguments] [options]
+tsy
 ```
 
-## Opțiuni disponibile
-Opțiune | Detalii
+## Available options
+Option | Details
 -------|-------------
 --file | commands.translation.stats.options.file
 
-## Argumente disponibile
-Argument | Detalii
+## Available arguments
+Argument | Details
 ---------|-------------
-language | Language to syncronize against English source files
+language | commands.translation.sync.arguments.language
+library | commands.translation.sync.arguments.library

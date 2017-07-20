@@ -1,13 +1,14 @@
 # generate:plugin:rulesaction
-The **generate:plugin:rulesaction** command Generate a plugin rule action
+Generate a plugin rule action
 
-**Использование:**
+**Usage:**
 ```
-$ drupal generate:plugin:rulesaction [options] 
+drupal generate:plugin:rulesaction [options]
+gpra
 ```
 
-## Доступные опции
-Опция | Описание
+## Available options
+Option | Details
 -------|-------------
 --module | Имя модуля.
 --class | Plugin class name
@@ -16,3 +17,27 @@ $ drupal generate:plugin:rulesaction [options]
 --type | Action Type (user or node)
 --category | Plugin category
 --context | Plugin context
+
+## Examples
+* Generate a user rule action plugin specifying the module name, the class, its label, the plugin id, the type, the category and its context
+```
+drupal generate:plugin:rulesaction  \
+  --module="modulename"  \
+  --class="DefaultAction"  \
+  --label="Default action"  \
+  --plugin-id="default_action"  \
+  --type="user"  \
+  --category="default_action"  \
+  --context="default_action"
+```
+* Generate a node rule action plugin specifying the module name, the class, its label, the plugin id, the type, the category and its context
+```
+drupal generate:plugin:rulesaction  \
+  --module="modulename"  \
+  --class="DefaultAction"  \
+  --label="Default action"  \
+  --plugin-id="default_action"  \
+  --type="node"  \
+  --category="default_action" \
+  --context="default_action"
+```

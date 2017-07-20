@@ -1,14 +1,21 @@
 # user:password:reset
 指定したユーザーのパスワードをリセットする
 
-**使い方:**
+**Usage:**
 ```
-$ drupal user:password:reset [arguments]
-$ uspr  
+drupal user:password:reset [arguments]
+upr
+uspr
 ```
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
 user | ユーザーID
 password | プレーンテキストのパスワード
+
+## Examples
+* Update password specifying the user id and the new password
+```
+drupal user:password:reset  2 p455w0rd
+```

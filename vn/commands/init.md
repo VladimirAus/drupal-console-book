@@ -3,10 +3,12 @@ Copy configuration files to user home directory.
 
 **Usage:**
 ```
-$ drupal init [options]
+drupal init [options]
 ```
 
-## Các tùy chọn có sẵn
-Tùy chọn | Các chi tiết
+## Available options
+Option | Details
 -------|-------------
+--destination | Destination directory to copy files
 --override | Override configurations files
+--autocomplete | Autocomplete tool files flag.

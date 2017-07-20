@@ -3,16 +3,17 @@ Rebuild node access permissions. Rebuilding will remove all privileges to conten
 
 **Usage:**
 ```
-$ drupal node:access:rebuild [options]
+drupal node:access:rebuild [options]
+nar
 ```
 
-## Các tùy chọn có sẵn
-Tùy chọn | Các chi tiết
+## Available options
+Option | Details
 -------|-------------
 --batch | Process in batch mode.
 
-## Ví dụ
+## Examples
 * Rebuild node access permissions
 ```
-$ drupal node:access:rebuild --batch
+drupal node:access:rebuild --batch
 ```

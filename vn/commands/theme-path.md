@@ -3,15 +3,22 @@ Returns the relative path to the theme (or absolute path)
 
 **Usage:**
 ```
-$ drupal theme:path [arguments] [options]
+drupal theme:path [arguments] [options]
+thp
 ```
 
-## Các tùy chọn có sẵn
-Tùy chọn | Các chi tiết
+## Available options
+Option | Details
 -------|-------------
 --absolute | Return theme absolute path
 
-## Các đối số có sẵn
-Đối số | Các chi tiết
+## Available arguments
+Argument | Details
 ---------|-------------
-module | The Theme name (machine name)
+theme | Theme name
+
+## Examples
+* Get the path of mytheme
+```
+drupal theme:path  mytheme
+```

@@ -1,13 +1,13 @@
 # rest:enable
 Az alkalmazás REST-erőforrásának engedélyezése
 
-**Használat:**
+**Usage:**
 ```
-$ drupal rest:enable [arguments]
-$ ree  
+drupal rest:enable [arguments]
+ree
 ```
 
-## Rendelkezésre álló argumentumok
-Argumentum | Részletek
+## Available arguments
+Argument | Details
 ---------|-------------
-resource-id | REST-azonosító
+resource-id | Rest ID

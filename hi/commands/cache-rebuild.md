@@ -1,23 +1,23 @@
 # cache:rebuild
 सभी साइट caches को पुनर्निर्माण और साफ़ करें।
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal cache:rebuild [arguments]
-$ cr  
+drupal cache:rebuild [arguments]
+cr
 ```
 
-## उपलब्ध तर्क
-तर्क | विवरण
+## Available arguments
+Argument | Details
 ---------|-------------
 cache | केवल एक विशेष caches साफ़ करें।
 
-## उदाहरण
+## Examples
 * सभी caches के पुनर्निर्माण 
 ```
-$ Drupal cr all
+Drupal cr all
 ```
 * डिस्कवरी caches के पुनर्निर्माण
 ```
-$ Drupal cr discovery
+Drupal cr discovery
 ```

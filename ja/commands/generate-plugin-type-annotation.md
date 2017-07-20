@@ -1,16 +1,26 @@
 # generate:plugin:type:annotation
 Generate a plugin type with annotation discovery
 
-**使い方:**
+**Usage:**
 ```
-$ drupal generate:plugin:type:annotation [options]
-$ gpta  
+drupal generate:plugin:type:annotation [options]
+gpta
 ```
 
-## 利用可能なオプション
-オプション | 詳細
+## Available options
+Option | Details
 -------|-------------
 --module | モジュール名
 --class | Plugin type class name
 --machine-name | commands.generate.plugin.type.annotation.options.plugin-id
 --label | Plugin type label
+
+## Examples
+* Generate a plugin with annotation discovery specifying module name, class name, machine name and label
+```
+drupal generate:plugin:type:annotation  \
+  --module="modulename"  \
+  --class="ExamplePlugin"  \
+  --machine-name="example_plugin"  \
+  --label="Example plugin"
+```

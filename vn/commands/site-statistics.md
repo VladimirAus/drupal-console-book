@@ -3,5 +3,6 @@ Show the current statistics of website.
 
 **Usage:**
 ```
-$ drupal site:statistics
+drupal site:statistics
+sst
 ```

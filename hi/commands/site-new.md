@@ -1,21 +1,13 @@
 # site:new
-एक नया Drupal परियोजना बनाएँ
+Download a new Drupal project
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal site:new [arguments] [options]
-$ sn  
+drupal site:new [options]
 ```
 
-## उपलब्ध विकल्प
-विकल्प | विवरण
+## Available options
+Option | Details
 -------|-------------
---latest | स्वचालित रूप से नवीनतम संस्करण का चयन करने के लिए इस विकल्प का उपयोग करें
---composer | कंपोजर के साथ Drupal इनस्टॉल करें
---unstable | अनस्टेबल रेलीसेस डाउनलोड करने के लिए इस विकल्प का प्रयोग करें। यदि इस्तेमाल नहीं किया है, तो आप केवल रिलीज स्थापित कर सकते हैं। नवीनतम नोड संस्करण के साथ इसका प्रयोग न करें।
-
-## उपलब्ध तर्क
-तर्क | विवरण
----------|-------------
-directory | Drupal डाउनलोड के लिये निर्देशिका
-version | किसी विशेष Drupal के संस्करण को डाउनलोड करें
+--repository | repository
+--directory | directory

@@ -1,12 +1,12 @@
 # locale:language:delete
-Delete a language to be supported by your site
+आपकी साइट के द्वारा समर्थित एक भाषा को हटाएँ
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal locale:language:delete [arguments]
+drupal locale:language:delete [arguments]
 ```
 
-## उपलब्ध तर्क
-तर्क | विवरण
+## Available arguments
+Argument | Details
 ---------|-------------
-language | Language for instance es or Spanish
+language | भाषा उदाहरण es या Spanish

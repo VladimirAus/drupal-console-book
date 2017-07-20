@@ -1,16 +1,29 @@
 # generate:command
 Generate commands for the console.
 
-**使い方:**
+**Usage:**
 ```
-$ drupal generate:command [options]
-$ gcm  
+drupal generate:command [options]
+gco
+gcm
 ```
 
-## 利用可能なオプション
-オプション | 詳細
+## Available options
+Option | Details
 -------|-------------
---module | モジュール名
+--extension | The extension name.
+--extension-type | The extension type.
 --class | The Class that describes the command. (Must end with the word 'Commmand').
 --name | The Command name.
 --container-aware | Is the command aware of the drupal site installation when executed
+--services | コンテナからサービスを読み込む
+
+## Examples
+* Generate a command specifying the extension name and type, its class and the name.
+```
+drupal generate:command  \
+  --extension="ExtensionName"  \
+  --extension-type="module"  \
+  --class="DefaultCommand"  \
+  --name="CommandName"
+```

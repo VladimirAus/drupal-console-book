@@ -3,10 +3,18 @@ Generate a .module file
 
 **Usage:**
 ```
-$ drupal generate:module:file [options]
+drupal generate:module:file [options]
+gmf
 ```
 
-## Các tùy chọn có sẵn
-Tùy chọn | Các chi tiết
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
+--module | Tên module.
+
+## Examples
+* Generate the .module file specifying the module name
+```
+drupal generate:module:file  \
+  --module="modulename"
+```

@@ -1,12 +1,12 @@
 # locale:translation:status
-List available translation updates
+सूची उपलब्ध अनुवाद अपडेट
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal locale:translation:status [arguments]
+drupal locale:translation:status [arguments]
 ```
 
-## उपलब्ध तर्क
-तर्क | विवरण
+## Available arguments
+Argument | Details
 ---------|-------------
-language | Language for instance es or Spanish
+language | भाषा उदाहरण es या Spanish

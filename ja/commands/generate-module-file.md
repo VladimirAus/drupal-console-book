@@ -1,12 +1,20 @@
 # generate:module:file
 Generate a .module file
 
-**使い方:**
+**Usage:**
 ```
-$ drupal generate:module:file [options]
+drupal generate:module:file [options]
+gmf
 ```
 
-## 利用可能なオプション
-オプション | 詳細
+## Available options
+Option | Details
 -------|-------------
 --module | モジュール名
+
+## Examples
+* Generate the .module file specifying the module name
+```
+drupal generate:module:file  \
+  --module="modulename"
+```

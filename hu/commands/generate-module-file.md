@@ -1,12 +1,20 @@
 # generate:module:file
 Generate a .module file
 
-**Használat:**
+**Usage:**
 ```
-$ drupal generate:module:file [options]
+drupal generate:module:file [options]
+gmf
 ```
 
-## Rendelkezésre álló beállítások
-Beállítás | Részletek
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
+--module | A modul neve.
+
+## Examples
+* Generate the .module file specifying the module name
+```
+drupal generate:module:file  \
+  --module="modulename"
+```

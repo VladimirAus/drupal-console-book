@@ -1,18 +1,39 @@
 # generate:service
-Generate service
+सर्विस उत्पन्न करें
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal generate:service [options]
-$ gs  
+drupal generate:service [options]
+gs
 ```
 
-## उपलब्ध विकल्प
-विकल्प | विवरण
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
+--module | मोड्यूल का नाम।
 --name | commands.generate.service.options.name
---class | Class name
+--class | क्लास का नाम
 --interface | commands.common.service.options.interface
---services | Load services from the container.
---path_service | Path
+--interface-name | commands.common.service.options.interface-name
+--services | सर्विसेज़ को container से लोड करें।
+--path-service | Path
+
+## Examples
+* Generate a services without interface specifying the module name, the service name, the class and its path
+```
+drupal generate:service  \
+  --module="modulename"  \
+  --name="modulename.default"  \
+  --class="DefaultService"  \
+  --path-service="/modules/custom/modulename/src/"
+```
+* Generate a services with interface specifying the module name, the service name, the class, the interface name and its path
+```
+drupal generate:service  \
+  --module="modulename"  \
+  --name="modulename.default"  \
+  --class="DefaultService"  \
+  --interface  \
+  --interface-name="InterfaceName"  \
+  --path-service="/modules/custom/modulename/src/"
+```

@@ -1,13 +1,22 @@
 # generate:help
 Generate an implementation of hook_help()
 
-**Használat:**
+**Usage:**
 ```
-$ drupal generate:help [options]
+drupal generate:help [options]
+gh
 ```
 
-## Rendelkezésre álló beállítások
-Beállítás | Részletek
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
---description | Module description
+--module | A modul neve.
+--description | A modul leírása
+
+## Examples
+* Generate a hook help specifying the module name and the description
+```
+drupal generate:help  \
+  --module="modulename"  \
+  --description="My Awesome Module"
+```

@@ -1,13 +1,20 @@
 # state:override
-The **state:override** command Override a State key.
+Override a State key.
 
-**Использование:**
+**Usage:**
 ```
-$ drupal state:override [arguments] 
+drupal state:override [arguments]
+sto
 ```
 
-## Доступные параметры
-Параметр | Описание
+## Available arguments
+Argument | Details
 ---------|-------------
 key | The State key to override.
 value | The State value to set.
+
+## Examples
+* Override state value specifying the state name and the new value
+```
+drupal state:override  comment.node_comment_statistics_scale "!!float 1"
+```

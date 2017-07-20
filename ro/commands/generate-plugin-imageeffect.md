@@ -1,17 +1,28 @@
 # generate:plugin:imageeffect
-Generate image effect plugin.
+Generează un plugin pentru efecte de imagini.
 
-**Folosire:**
+**Usage:**
 ```
-$ drupal generate:plugin:imageeffect [options]
-$ gpie  
+drupal generate:plugin:imageeffect [options]
+gpie
 ```
 
-## Opțiuni disponibile
-Opțiune | Detalii
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
---class | Plugin class name
---label | Plugin label
---plugin-id | Plugin id
---description | Plugin Description
+--module | Numele Modulului.
+--class | Numele clasei pluginului
+--label | Eticheta pluginului
+--plugin-id | Id-ul pluginului
+--description | Descrierea pluginului
+
+## Examples
+* Generate a image effect plugin specifying the module name, the class, its label, the plugin id and a description
+```
+drupal generate:plugin:imageeffect  \
+  --module="modulename"  \
+  --class="DefaultImageEffect"  \
+  --label="Default image effect"  \
+  --plugin-id="default_image_effect"  \
+  --description="My Image Effect"
+```

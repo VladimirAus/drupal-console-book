@@ -3,11 +3,23 @@ Thi hành cron implementation từ một module chỉ định hoặc tất cả 
 
 **Usage:**
 ```
-$ drupal cron:execute [arguments]
-$ cre  
+drupal cron:execute [arguments]
+croe
+cre
 ```
 
-## Các đối số có sẵn
-Đối số | Các chi tiết
+## Available arguments
+Argument | Details
 ---------|-------------
 module | Tên module.
+
+## Examples
+* Execute the cron globally
+```
+drupal cron:execute
+```
+* Execute the cron on the specified module
+```
+drupal cron:execute \
+  <module>
+```

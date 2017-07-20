@@ -3,12 +3,12 @@ Tiến hành một phần chuyển đổi dữ liệu có sẵn trong ứng dụ
 
 **Usage:**
 ```
-$ drupal migrate:execute [arguments] [options]
-$ mie  
+drupal migrate:execute [arguments] [options]
+mie
 ```
 
-## Các tùy chọn có sẵn
-Tùy chọn | Các chi tiết
+## Available options
+Option | Details
 -------|-------------
 --site-url | Nguồn URL
 --db-type | commands.migrate.setup.migrations.options.db-type
@@ -19,8 +19,9 @@ Tùy chọn | Các chi tiết
 --db-prefix | Tiền tố cơ sở dữ liệu
 --db-port | Cổng vào cơ sở dữ liệu
 --exclude | Các ID của phần chuyển đổi dữ liệu để loại trừ
+--source-base_path | Local file directory containing your source site (e.g. /var/www/docroot), or your site address (for example http://example.com)
 
-## Các đối số có sẵn
-Đối số | Các chi tiết
+## Available arguments
+Argument | Details
 ---------|-------------
 migration-ids | Các ID của phần chuyển đổi dữ liệu

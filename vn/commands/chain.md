@@ -3,24 +3,24 @@ Thi hành chuỗi câu lệnh
 
 **Usage:**
 ```
-$ drupal chain [arguments] [options]
+drupal chain [arguments] [options]
 ```
 
-## Các tùy chọn có sẵn
-Tùy chọn | Các chi tiết
+## Available options
+Option | Details
 -------|-------------
 --file | Người dùng định nghĩa file đang chứa những câu lệnh để thực thi
 --placeholder | commands.chain.options.placeholder
 --help | Display this help message
---quiet | Suppress all output from the command
---verbose | Increase the verbosity of messages: 1 for normal output, 2 for more verbose output, and 3 for debug
+--quiet | Do not output any message
+--verbose | Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
 --version | Display this application version
 --ansi | Force ANSI output
 --no-ansi | Disable ANSI output
 --no-interaction | Do not ask any interactive question
 --env | The Environment name
 --root | Define the Drupal root to be used in command execution
---no-debug | Switches off debug mode
+--debug | application.options.debug
 --learning | Generate a verbose code output
 --generate-chain | Shows command options and arguments as yaml output to be used in chain command
 --generate-inline | Shows command options and arguments as inline command
@@ -29,7 +29,14 @@ Tùy chọn | Các chi tiết
 --uri | URI of the Drupal site to use (for multi-site environments or when running on an alternate port)
 --yes | Skip confirmation and proceed
 
-## Các đối số có sẵn
-Đối số | Các chi tiết
+## Available arguments
+Argument | Details
 ---------|-------------
 command | The command to execute
+
+## Examples
+* Providing a file option using full path.
+```
+drupal chain \
+  --file="/path/to/file/chain-file.yml"
+```

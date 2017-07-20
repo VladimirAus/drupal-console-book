@@ -1,16 +1,26 @@
 # generate:plugin:type:annotation
-Generate a plugin type with annotation discovery
+Tạo một kiểu plugin với annotation discovery
 
 **Usage:**
 ```
-$ drupal generate:plugin:type:annotation [options]
-$ gpta  
+drupal generate:plugin:type:annotation [options]
+gpta
 ```
 
-## Các tùy chọn có sẵn
-Tùy chọn | Các chi tiết
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
---class | Plugin type class name
+--module | Tên module.
+--class | Nhập tên lớp kiểu plugin
 --machine-name | commands.generate.plugin.type.annotation.options.plugin-id
---label | Plugin type label
+--label | Nhập nhãn kiểu plugin
+
+## Examples
+* Generate a plugin with annotation discovery specifying module name, class name, machine name and label
+```
+drupal generate:plugin:type:annotation  \
+  --module="modulename"  \
+  --class="ExamplePlugin"  \
+  --machine-name="example_plugin"  \
+  --label="Example plugin"
+```

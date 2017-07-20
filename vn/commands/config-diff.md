@@ -3,15 +3,22 @@ Ouput configuration items that are different in active configuration compared wi
 
 **Usage:**
 ```
-$ drupal config:diff [arguments] [options]
+drupal config:diff [arguments] [options]
+cdi
 ```
 
-## Các tùy chọn có sẵn
-Tùy chọn | Các chi tiết
+## Available options
+Option | Details
 -------|-------------
 --reverse | See the changes in reverse (i.e diff a directory to the active configuration).
 
-## Các đối số có sẵn
-Đối số | Các chi tiết
+## Available arguments
+Argument | Details
 ---------|-------------
 directory | The directory to diff against. If omitted, choose from Drupal config directories.
+
+## Examples
+* Provide a config directory
+```
+drupal config:diff ../config/path
+```

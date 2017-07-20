@@ -3,16 +3,23 @@ Cài đặt theme hoặc các themes trong ứng dụng
 
 **Usage:**
 ```
-$ drupal theme:install [arguments] [options]
-$ ti  
+drupal theme:install [arguments] [options]
+thi
+ti
 ```
 
-## Các tùy chọn có sẵn
-Tùy chọn | Các chi tiết
+## Available options
+Option | Details
 -------|-------------
 --set-default | Thiết lập theme thành theme mặc định
 
-## Các đối số có sẵn
-Đối số | Các chi tiết
+## Available arguments
+Argument | Details
 ---------|-------------
 theme | commands.theme.install.options.module
+
+## Examples
+* Install theme specifying the name
+```
+drupal theme:install  mytheme
+```

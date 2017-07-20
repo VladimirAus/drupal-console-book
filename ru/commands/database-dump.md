@@ -1,17 +1,31 @@
 # database:dump
-The **database:dump** command Дамп структуры и контента MySQL БД и таблиц
+Дамп структуры и содержимого базы данных
 
-**Использование:**
+**Usage:**
 ```
-$ drupal database:dump [arguments] [options] 
+drupal database:dump [arguments] [options]
+dbdu
 ```
 
-## Доступные опции
-Опция | Описание
+## Available options
+Option | Details
 -------|-------------
---file | commands.database.dump.option.file
+--file | Имя файла резервной копии базы данных
+--gz | Pass this option if you want the sql result file gzipped
 
-## Доступные параметры
-Параметр | Описание
+## Available arguments
+Argument | Details
 ---------|-------------
-database | Ключ БД из settings.php
+database | Ключ базы данных из settings.php
+
+## Examples
+* Dump default database or the one specified on the argument
+```
+drupal database:dump \
+  <database>
+```
+* Dump in gz compressed format
+```
+drupal database:dump \
+  --gz
+```

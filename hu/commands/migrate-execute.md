@@ -1,14 +1,14 @@
 # migrate:execute
 Az alkalmazáshoz elérhető költöztetés végrehajtása
 
-**Használat:**
+**Usage:**
 ```
-$ drupal migrate:execute [arguments] [options]
-$ mie  
+drupal migrate:execute [arguments] [options]
+mie
 ```
 
-## Rendelkezésre álló beállítások
-Beállítás | Részletek
+## Available options
+Option | Details
 -------|-------------
 --site-url | Webhely forrás URL-címe
 --db-type | commands.migrate.setup.migrations.options.db-type
@@ -19,8 +19,9 @@ Beállítás | Részletek
 --db-prefix | Adatbázis előtag
 --db-port | Adatbázis port
 --exclude | Kizárandó költöztetési azonosító(k)
+--source-base_path | Local file directory containing your source site (e.g. /var/www/docroot), or your site address (for example http://example.com)
 
-## Rendelkezésre álló argumentumok
-Argumentum | Részletek
+## Available arguments
+Argument | Details
 ---------|-------------
 migration-ids | Költöztetési azonosító(k)

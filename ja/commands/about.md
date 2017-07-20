@@ -1,7 +1,7 @@
 # about
 Drupal Consoleプロジェクトについての基本情報を表示
 
-**使い方:**
+**Usage:**
 ```
-$ drupal about
+drupal about
 ```

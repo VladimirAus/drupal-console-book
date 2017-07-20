@@ -1,17 +1,25 @@
 # database:restore
 データベースの構造とコンテンツをリストア
 
-**使い方:**
+**Usage:**
 ```
-$ drupal database:restore [arguments] [options]
+drupal database:restore [arguments] [options]
+dbr
 ```
 
-## 利用可能なオプション
-オプション | 詳細
+## Available options
+Option | Details
 -------|-------------
 --file | データベースのバックアップファイルの名前
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
 database | settings.phpのデータベースのキー
+
+## Examples
+* Restore the database file dump to the database default or another one specified
+```
+drupal database:restore \
+  --file='/srv/dump/db.sql'
+```

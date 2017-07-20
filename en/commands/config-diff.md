@@ -1,9 +1,10 @@
 # config:diff
-Ouput configuration items that are different in active configuration compared with a directory.
+Output configuration items that are different in active configuration compared with a directory.
 
 **Usage:**
 ```
-$ drupal config:diff [arguments] [options]
+drupal config:diff [arguments] [options]
+cdi
 ```
 
 ## Available options
@@ -15,3 +16,9 @@ Option | Details
 Argument | Details
 ---------|-------------
 directory | The directory to diff against. If omitted, choose from Drupal config directories.
+
+## Examples
+* Provide a config directory
+```
+drupal config:diff ../config/path
+```

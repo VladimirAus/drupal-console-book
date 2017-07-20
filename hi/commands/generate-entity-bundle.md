@@ -1,15 +1,24 @@
 # generate:entity:bundle
-Generate a new content type (node / entity bundle)
+एक नया कंटेंट प्रकार उत्पन्न करें (नोड/एंटिटी बंडल)
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal generate:entity:bundle [options]
-$ geb  
+drupal generate:entity:bundle [options]
+geb
 ```
 
-## उपलब्ध विकल्प
-विकल्प | विवरण
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
---bundle-name | The content type's machine name
---bundle-title | The content type's human-readable name
+--module | मोड्यूल का नाम।
+--bundle-name | कंटेंट प्रकार का यांत्रिक नाम
+--bundle-title | कंटेंट प्रकार का मानव पठनीय नाम
+
+## Examples
+* Generate bundle entity specifying the module, the bundle name and its title
+```
+drupal generate:entity:bundle  \
+  --module="modulename"  \
+  --bundle-name="default"  \
+  --bundle-title="default"
+```

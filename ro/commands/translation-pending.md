@@ -1,17 +1,19 @@
 # translation:pending
-Determine pending translation string in a language or a specific file in a language
+commands.translation.pending.description
 
-**Folosire:**
+**Usage:**
 ```
-$ drupal translation:pending [arguments] [options]
+drupal translation:pending [arguments] [options]
+tp
 ```
 
-## Opțiuni disponibile
-Opțiune | Detalii
+## Available options
+Option | Details
 -------|-------------
---file | Specific file to determine pending translations against English
+--file | commands.translation.pending.options.file
 
-## Argumente disponibile
-Argument | Detalii
+## Available arguments
+Argument | Details
 ---------|-------------
-language | Language to determine pending translations against English
+language | commands.translation.pending.arguments.language
+library | commands.translation.pending.arguments.library

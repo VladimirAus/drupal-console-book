@@ -1,18 +1,25 @@
 # theme:install
 テーマをインストールする
 
-**使い方:**
+**Usage:**
 ```
-$ drupal theme:install [arguments] [options]
-$ ti  
+drupal theme:install [arguments] [options]
+thi
+ti
 ```
 
-## 利用可能なオプション
-オプション | 詳細
+## Available options
+Option | Details
 -------|-------------
 --set-default | デフォルトテーマとしてセットする
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
 theme | commands.theme.install.options.module
+
+## Examples
+* Install theme specifying the name
+```
+drupal theme:install  mytheme
+```

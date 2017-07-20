@@ -1,16 +1,29 @@
 # generate:command
-Generate commands for the console.
+Parancsok létrehozása a konzolhoz.
 
-**Használat:**
+**Usage:**
 ```
-$ drupal generate:command [options]
-$ gcm  
+drupal generate:command [options]
+gco
+gcm
 ```
 
-## Rendelkezésre álló beállítások
-Beállítás | Részletek
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
---class | The Class that describes the command. (Must end with the word 'Command').
---name | The Command name.
---container-aware | Is the command aware of the drupal site installation when executed
+--extension | The extension name.
+--extension-type | The extension type.
+--class | A parancsot leíró osztály. (A 'Command' szóra kell végződnie).
+--name | A parancs neve.
+--container-aware | A parancs ismeri-e a drupal telepítési helyét a végrehajtáskor
+--services | Szolgáltatások betöltése a tárolóból.
+
+## Examples
+* Generate a command specifying the extension name and type, its class and the name.
+```
+drupal generate:command  \
+  --extension="ExtensionName"  \
+  --extension-type="module"  \
+  --class="DefaultCommand"  \
+  --name="CommandName"
+```

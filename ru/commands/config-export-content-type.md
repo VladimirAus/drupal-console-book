@@ -1,19 +1,32 @@
 # config:export:content:type
-The **config:export:content:type** command Экспорт выбранного типа материала и его полей.
+Экспорт выбранного типа материала и его полей.
 
-**Использование:**
+**Usage:**
 ```
-$ drupal config:export:content:type [arguments] [options] 
-$ cect  
+drupal config:export:content:type [arguments] [options]
+cect
 ```
 
-## Доступные опции
-Опция | Описание
+## Available options
+Option | Details
 -------|-------------
 --module | Имя модуля.
 --optional-config | Экспорт типа материала как дополнительную YAML конфигурацию в ваш модуль
 
-## Доступные параметры
-Параметр | Описание
+## Available arguments
+Argument | Details
 ---------|-------------
 content-type | Тип материала для экспорта
+
+## Examples
+* Provide a content type  and module name
+```
+drupal config:export:content:type page \
+  --module="demo"
+```
+* If you want export content type provide the optional config
+```
+drupal config:export:content:type page \
+  --module="demo" \
+  --optional-config
+```

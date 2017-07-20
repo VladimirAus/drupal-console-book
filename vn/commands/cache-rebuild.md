@@ -3,21 +3,21 @@ Xây dựng lại và làm sạch tất cả cache trên trang.
 
 **Usage:**
 ```
-$ drupal cache:rebuild [arguments]
-$ cr  
+drupal cache:rebuild [arguments]
+cr
 ```
 
-## Các đối số có sẵn
-Đối số | Các chi tiết
+## Available arguments
+Argument | Details
 ---------|-------------
 cache | Chỉ xóa một cache được chỉ định
 
-## Ví dụ
+## Examples
 * Xây dựng lại all caches
 ```
-$ drupal cr all
+drupal cr all
 ```
 * Xây dựng lại discovery cache
 ```
-$ drupal cr discovery
+drupal cr discovery
 ```

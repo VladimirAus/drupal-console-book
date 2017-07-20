@@ -1,18 +1,31 @@
 # create:terms
 Tesztkifejezések létrehozása egy Drupal 8 alkalmazáshoz.
 
-**Használat:**
+**Usage:**
 ```
-$ drupal create:terms [arguments] [options]
+drupal create:terms [arguments] [options]
+crt
 ```
 
-## Rendelkezésre álló beállítások
-Beállítás | Részletek
+## Available options
+Option | Details
 -------|-------------
 --limit | Hány szó jöjjön létre
 --name-words | A kifejezések által tartalmazott szavak maximális száma
 
-## Rendelkezésre álló argumentumok
-Argumentum | Részletek
+## Available arguments
+Argument | Details
 ---------|-------------
 vocabularies | A kifejezések létrehozásakor használandó szótárak
+
+## Examples
+* Provide the vocabulary term name.
+```
+drupal create:terms vocabulary
+```
+* Provide the limit of terms to add and limit of title words.
+```
+drupal create:terms tags \
+  --limit="10" \
+  --name-words="5"
+```

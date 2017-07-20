@@ -1,12 +1,12 @@
 # locale:language:delete
-Delete a language to be supported by your site
+A webhely által támogatott nyelv törlése
 
-**Használat:**
+**Usage:**
 ```
-$ drupal locale:language:delete [arguments]
+drupal locale:language:delete [arguments]
 ```
 
-## Rendelkezésre álló argumentumok
-Argumentum | Részletek
+## Available arguments
+Argument | Details
 ---------|-------------
-language | Language for instance es or Spanish
+language | Nyelv, például es vagy Spanish

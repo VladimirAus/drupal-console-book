@@ -1,12 +1,20 @@
 # database:connect
 Megjeleníti az adatbázis-kapcsolatot
 
-**Használat:**
+**Usage:**
 ```
-$ drupal database:connect [arguments]
+drupal database:connect [arguments]
+dbco
 ```
 
-## Rendelkezésre álló argumentumok
-Argumentum | Részletek
+## Available arguments
+Argument | Details
 ---------|-------------
 database | Adatbáziskulcs a settings.php fájlból
+
+## Examples
+* Connects to an specified database, or the default if not arguments passed
+```
+drupal database:connect \
+  <database>
+```

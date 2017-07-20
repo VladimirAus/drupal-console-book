@@ -3,11 +3,20 @@ Generate an implementation of hook_help()
 
 **Usage:**
 ```
-$ drupal generate:help [options]
+drupal generate:help [options]
+gh
 ```
 
-## Các tùy chọn có sẵn
-Tùy chọn | Các chi tiết
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
---description | Module description
+--module | Tên module.
+--description | Mô tả module
+
+## Examples
+* Generate a hook help specifying the module name and the description
+```
+drupal generate:help  \
+  --module="modulename"  \
+  --description="My Awesome Module"
+```

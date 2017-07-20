@@ -3,15 +3,22 @@ Returns the relative path to the module (or absolute path)
 
 **Usage:**
 ```
-$ drupal module:path [arguments] [options]
+drupal module:path [arguments] [options]
+mop
 ```
 
-## Các tùy chọn có sẵn
-Tùy chọn | Các chi tiết
+## Available options
+Option | Details
 -------|-------------
 --absolute | Return module absolute path
 
-## Các đối số có sẵn
-Đối số | Các chi tiết
+## Available arguments
+Argument | Details
 ---------|-------------
 module | The Module name (machine name)
+
+## Examples
+* Get the relative path of the module specifying the module name
+```
+drupal module:path  modulename
+```

@@ -1,8 +1,15 @@
 # router:rebuild
-The **router:rebuild** command Rebuild routes for the application
+Отображает маршруты для приложения
 
-**Использование:**
+**Usage:**
 ```
-$ drupal router:rebuild 
-$ ror  
+drupal router:rebuild
+rr
+ror
+```
+
+## Examples
+* Rebuild routes
+```
+drupal router:rebuild
 ```

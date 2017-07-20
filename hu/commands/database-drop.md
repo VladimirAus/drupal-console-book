@@ -1,12 +1,20 @@
 # database:drop
 Egy adatbázis összes táblájának eldobása.
 
-**Használat:**
+**Usage:**
 ```
-$ drupal database:drop [arguments]
+drupal database:drop [arguments]
+dbd
 ```
 
-## Rendelkezésre álló argumentumok
-Argumentum | Részletek
+## Available arguments
+Argument | Details
 ---------|-------------
 database | Adatbáziskulcs a settings.php fájlból
+
+## Examples
+* Drop the tables on the database specified on the argument
+```
+drupal database:drop \
+  <database>
+```

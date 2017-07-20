@@ -1,12 +1,12 @@
 # locale:language:add
-Add a language to be supported by your site
+Thêm một ngôn ngữ được hỗ trợ bởi site của bạn
 
 **Usage:**
 ```
-$ drupal locale:language:add [arguments]
+drupal locale:language:add [arguments]
 ```
 
-## Các đối số có sẵn
-Đối số | Các chi tiết
+## Available arguments
+Argument | Details
 ---------|-------------
-language | Language for instance es or Spanish
+language | Ngôn ngữ ví sụ như es hoặc Spanish

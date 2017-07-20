@@ -1,19 +1,31 @@
 # generate:plugin:block
-Generate a plugin block
+Blokk bővítmény létrehozása
 
-**Használat:**
+**Usage:**
 ```
-$ drupal generate:plugin:block [options]
-$ gpb  
+drupal generate:plugin:block [options]
+gpb
 ```
 
-## Rendelkezésre álló beállítások
-Beállítás | Részletek
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
---class | Plugin class name
---label | Plugin label
---plugin-id | Plugin id
---theme-region | Theme region to render Plugin Block
---inputs | Create inputs in a form.
---services | Load services from the container.
+--module | A modul neve.
+--class | Bővítmény osztályneve
+--label | Bővítmény felirata
+--plugin-id | Bővítmény azonosítója
+--theme-region | Smink azon régiója, ahol a blokk bővítménynek meg kell jelennie
+--inputs | Bemenetek létrehozása egy űrlapban.
+--services | Szolgáltatások betöltése a tárolóból.
+
+## Examples
+* Generate a plugin block in the header region with an input field specifying the module name, the class, the label, its id, the region and the input
+```
+drupal generate:plugin:block  \
+  --module="modulename"  \
+  --class="DefaultBlock"  \
+  --label="Default block"  \
+  --plugin-id="default_block"  \
+  --theme-region="header"  \
+  --inputs='"name":"inputtext", "type":"text_format", "label":"InputText", "options":"", "description":"Just an input text", "maxlength":"", "size":"", "default_value":"", "weight":"0", "fieldset":""'
+```

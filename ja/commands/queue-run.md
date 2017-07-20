@@ -1,12 +1,13 @@
 # queue:run
 選択したキューを処理する
 
-**使い方:**
+**Usage:**
 ```
-$ drupal queue:run [arguments]
+drupal queue:run [arguments]
+qr
 ```
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
 name | キューの名前

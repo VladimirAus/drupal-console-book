@@ -3,13 +3,23 @@ Generate an implementation of a skeleton plugin for those plugins Drupal Console
 
 **Usage:**
 ```
-$ drupal generate:plugin:skeleton [options]
+drupal generate:plugin:skeleton [options]
+gps
 ```
 
-## Các tùy chọn có sẵn
-Tùy chọn | Các chi tiết
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
+--module | Tên module.
 --plugin-id | commands.generate.plugin.options.plugin-id
---class | Plugin class name
---services | Load services from the container.
+--class | Tên lớp plugin
+--services | Nạp các dịch vụ từ container.
+
+## Examples
+* Generate a plugin skeleton specifying module name, the plugin id and the class
+```
+drupal generate:plugin:skeleton  \
+  --module="modulename"  \
+  --plugin-id="link_relation_type"  \
+  --class="DefaultLinkRelationType"
+```

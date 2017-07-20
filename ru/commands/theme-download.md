@@ -1,14 +1,26 @@
 # theme:download
-The **theme:download** command Download theme in application
+Download theme in application
 
-**Использование:**
+**Usage:**
 ```
-$ drupal theme:download [arguments] 
-$ td  
+drupal theme:download [arguments] [options]
+thd
+td
 ```
 
-## Доступные параметры
-Параметр | Описание
+## Available options
+Option | Details
+-------|-------------
+--composer | Use --composer option for manage the theme download with Composer
+
+## Available arguments
+Argument | Details
 ---------|-------------
-theme | commands.theme.download.options.theme
+theme | the Theme name
 version | Theme version i.e 1.x-dev
+
+## Examples
+* Download theme specifying name and version
+```
+drupal theme:download  Alina 7.x-1.2
+```

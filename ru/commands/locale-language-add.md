@@ -1,12 +1,12 @@
 # locale:language:add
-The **locale:language:add** command Add a language to be supported by your site
+Добавить поддержку языка вашим сайтом
 
-**Использование:**
+**Usage:**
 ```
-$ drupal locale:language:add [arguments] 
+drupal locale:language:add [arguments]
 ```
 
-## Доступные параметры
-Параметр | Описание
+## Available arguments
+Argument | Details
 ---------|-------------
-language | Language for instance es or Spanish
+language | Язык, например: es или Spanish

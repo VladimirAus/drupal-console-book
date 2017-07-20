@@ -1,12 +1,20 @@
 # database:connect
 Lansează un client DB dacă acesta este disponibil
 
-**Folosire:**
+**Usage:**
 ```
-$ drupal database:connect [arguments]
+drupal database:connect [arguments]
+dbco
 ```
 
-## Argumente disponibile
-Argument | Detalii
+## Available arguments
+Argument | Details
 ---------|-------------
 database | Cheia bazei de date din fișierul settings.php
+
+## Examples
+* Connects to an specified database, or the default if not arguments passed
+```
+drupal database:connect \
+  <database>
+```

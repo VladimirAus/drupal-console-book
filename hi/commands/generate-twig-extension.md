@@ -1,15 +1,25 @@
 # generate:twig:extension
 Generate a Twig extension.
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal generate:twig:extension [options]
+drupal generate:twig:extension [options]
+gte
 ```
 
-## उपलब्ध विकल्प
-विकल्प | विवरण
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
+--module | मोड्यूल का नाम।
 --name | Twig Extension name
 --class | Class name
---services | Load services from the container.
+--services | सर्विसेज़ को container से लोड करें।
+
+## Examples
+* Generate a twig extension specifying the module name, the extension name and its class
+```
+drupal generate:twig:extension  \
+  --module="modulename"  \
+  --name="modulename.twig.extension"  \
+  --class="DefaultTwigExtension"
+```

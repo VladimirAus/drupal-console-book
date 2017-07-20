@@ -1,14 +1,21 @@
 # update:execute
 Update N 関数を実行する
 
-**使い方:**
+**Usage:**
 ```
-$ drupal update:execute [arguments]
-$ upe  
+drupal update:execute [arguments]
+upex
+upe
 ```
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
 module | モジュール名
 update-n | 実行するUpdate N 関数
+
+## Examples
+* Update all entities
+```
+drupal update:execute
+```

@@ -1,12 +1,23 @@
 # image:styles:flush
 画像スタイルのフラッシュを実行
 
-**使い方:**
+**Usage:**
 ```
-$ drupal image:styles:flush [arguments]
+drupal image:styles:flush [arguments]
+isf
 ```
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
 styles | 画像スタイル名称
+
+## Examples
+* Flush large image style
+```
+drupal image:styles:flush  large
+```
+* Flush thumbnail image style
+```
+drupal image:styles:flush  thumbnail
+```

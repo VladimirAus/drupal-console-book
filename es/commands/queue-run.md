@@ -1,12 +1,13 @@
 # queue:run
 Procesa la cola seleccionada.
 
-**Uso:**
+**Usage:**
 ```
-$ drupal queue:run [arguments]
+drupal queue:run [arguments]
+qr
 ```
 
-## Argumentos disponibles
-Argumento | Detalles
+## Available arguments
+Argument | Details
 ---------|-------------
 name | Nombre de la cola.

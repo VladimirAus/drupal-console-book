@@ -1,13 +1,23 @@
 # views:enable
 एक व्यू चालू करें
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal views:enable [arguments]
-$ ve  
+drupal views:enable [arguments]
+ve
 ```
 
-## उपलब्ध तर्क
-तर्क | विवरण
+## Available arguments
+Argument | Details
 ---------|-------------
-view-id | व्यू आईडी
+view-id | commands.views.debug.arguments.view-id
+
+## Examples
+* Enable content view
+```
+drupal views:enable  content
+```
+* Enable frontpage view
+```
+drupal views:enable  frontpage
+```

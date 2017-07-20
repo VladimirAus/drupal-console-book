@@ -1,15 +1,27 @@
 # config:import
 वर्तमान अनुप्रयोग में व्यवस्था आयात करें।
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal config:import [options]
-$ ci  
+drupal config:import [options]
+ci
 ```
 
-## उपलब्ध विकल्प
-विकल्प | विवरण
+## Available options
+Option | Details
 -------|-------------
---file | विन्यास फ़ाइल पथ।
---directory | कॉन्फ़िगरेशन की एक डायरेक्टरी के लिए पथ इम्पोर्ट करते हैं।
---remove-files | सिंक्रोनिज़ेशन के बाद फ़ाइलें निकालें।
+--file | Path to an archive file of configuration to import.
+--directory | Path to a directory of configuration to import.
+--remove-files | Remove files after synchronization.
+
+## Examples
+* Provide a configuration file
+```
+drupal config:import \
+  --file=/path/to/config/file
+```
+* Provide a configuration directory
+```
+drupal config:import  \
+  --directory=/path/to/config/dir
+```

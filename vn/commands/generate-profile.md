@@ -1,17 +1,30 @@
 # generate:profile
-Generate a profile.
+Tạo một profile.
 
 **Usage:**
 ```
-$ drupal generate:profile [options]
+drupal generate:profile [options]
+gpr
 ```
 
-## Các tùy chọn có sẵn
-Tùy chọn | Các chi tiết
+## Available options
+Option | Details
 -------|-------------
---profile | The profile name
---machine-name | The machine name (lowercase and underscore only)
---description | Profile description
---core | Core version
---dependencies | Module dependencies separated by commas (i.e. context, panels)
---distribution | The distribution name
+--profile | Tên profile
+--machine-name | Tên máy (chỉ chữ thường và gạch dưới)
+--description | Mô tả profile
+--core | Phiên bản core
+--dependencies | Sự phụ thuộc của module chia ra bởi dấu phẩy (ví dụ context, panels)
+--themes | commands.generate.profile.options.themes
+--distribution | Tên distribution
+
+## Examples
+* Generate a profile specifying the profile name, the machine name, a description, the core and its module dependencies
+```
+drupal generate:profile  \
+  --profile="NewProfileName"  \
+  --machine-name="newprofilename"  \
+  --description="My Useful Profile"  \
+  --core="8.x"  \
+  --dependencies="modulename"
+```

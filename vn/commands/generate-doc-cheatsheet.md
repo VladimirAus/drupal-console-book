@@ -1,14 +1,14 @@
 # generate:doc:cheatsheet
-Generate a printable cheatsheet for Commands
+commands.generate.doc.cheatsheet.description
 
 **Usage:**
 ```
-$ drupal generate:doc:cheatsheet [options]
-$ gdc  
+drupal generate:doc:cheatsheet [options]
+gdc
 ```
 
-## Các tùy chọn có sẵn
-Tùy chọn | Các chi tiết
+## Available options
+Option | Details
 -------|-------------
---path | The path to generate the pdf for the documentation
---wkhtmltopdf | The path for the wkhtmltopdf binary in your system
+--path | commands.generate.doc.cheatsheet.options.path
+--wkhtmltopdf | commands.generate.doc.cheatsheet.options.wkhtmltopdf

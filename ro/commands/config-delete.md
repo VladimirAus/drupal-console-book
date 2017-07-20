@@ -1,13 +1,20 @@
 # config:delete
 Delete configuration
 
-**Folosire:**
+**Usage:**
 ```
-$ drupal config:delete [arguments]
+drupal config:delete [arguments]
+cd
 ```
 
-## Argumente disponibile
-Argument | Detalii
+## Available arguments
+Argument | Details
 ---------|-------------
 type | Configuration type.
 name | Configuration name.
+
+## Examples
+* Provide a config type and a config name
+```
+drupal config:delete active all
+```

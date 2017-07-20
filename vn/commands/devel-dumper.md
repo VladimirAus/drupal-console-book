@@ -3,10 +3,11 @@ Change the devel dumper plugin
 
 **Usage:**
 ```
-$ drupal devel:dumper [arguments]
+drupal devel:dumper [arguments]
+dd
 ```
 
-## Các đối số có sẵn
-Đối số | Các chi tiết
+## Available arguments
+Argument | Details
 ---------|-------------
 dumper | Name of the devel dumper plugin

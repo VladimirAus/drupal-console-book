@@ -1,13 +1,14 @@
 # rest:disable
 Dezactiveaza o resursă REST
 
-**Folosire:**
+**Usage:**
 ```
-$ drupal rest:disable [arguments]
-$ redi  
+drupal rest:disable [arguments]
+red
+redi
 ```
 
-## Argumente disponibile
-Argument | Detalii
+## Available arguments
+Argument | Details
 ---------|-------------
-resource-id | ID-ul resursei
+resource-id | Rest ID

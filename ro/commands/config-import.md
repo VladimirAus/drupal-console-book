@@ -1,15 +1,27 @@
 # config:import
 Importă configurarea pentru aplicația curentă.
 
-**Folosire:**
+**Usage:**
 ```
-$ drupal config:import [options]
-$ ci  
+drupal config:import [options]
+ci
 ```
 
-## Opțiuni disponibile
-Opțiune | Detalii
+## Available options
+Option | Details
 -------|-------------
---file | Calea către fișierul de configurare.
+--file | Path to an archive file of configuration to import.
 --directory | Path to a directory of configuration to import.
---remove-files | Eliminați fișierele după sincronizare.
+--remove-files | Remove files after synchronization.
+
+## Examples
+* Provide a configuration file
+```
+drupal config:import \
+  --file=/path/to/config/file
+```
+* Provide a configuration directory
+```
+drupal config:import  \
+  --directory=/path/to/config/dir
+```

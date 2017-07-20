@@ -1,14 +1,14 @@
 # generate:permissions
-Generate module permissions
+commands.generate.permission.description
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal generate:permissions [options]
-$ gp  
+drupal generate:permissions [options]
+gp
 ```
 
-## उपलब्ध विकल्प
-विकल्प | विवरण
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
---permissions | Create permissions.
+--module | मोड्यूल का नाम।
+--permissions | अनुमतियों को बनाएँ।

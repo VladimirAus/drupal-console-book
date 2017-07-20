@@ -1,15 +1,24 @@
 # generate:authentication:provider
-Generate an Authentication Provider
+Tạo ra một Authentication Provider
 
 **Usage:**
 ```
-$ drupal generate:authentication:provider [options]
-$ gap  
+drupal generate:authentication:provider [options]
+gap
 ```
 
-## Các tùy chọn có sẵn
-Tùy chọn | Các chi tiết
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
---class | Authentication Provider class
+--module | Tên module.
+--class | Lớp Authentication Provider
 --provider-id | Provider ID
+
+## Examples
+* Generate an authentication provider specifying the module, the class and the provider id
+```
+drupal generate:authentication:provider  \
+  --module="modulename"  \
+  --class="DefaultAuthenticationProvider"  \
+  --provider-id="default_authentication_provider"
+```

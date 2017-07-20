@@ -1,17 +1,31 @@
 # database:dump
 データベースの構造とコンテンツをダンプ
 
-**使い方:**
+**Usage:**
 ```
-$ drupal database:dump [arguments] [options]
+drupal database:dump [arguments] [options]
+dbdu
 ```
 
-## 利用可能なオプション
-オプション | 詳細
+## Available options
+Option | Details
 -------|-------------
---file | commands.database.dump.option.file
+--file | データベースをバックアップするファイル名
+--gz | Pass this option if you want the sql result file gzipped
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
 database | settings.phpのデータベースのキー
+
+## Examples
+* Dump default database or the one specified on the argument
+```
+drupal database:dump \
+  <database>
+```
+* Dump in gz compressed format
+```
+drupal database:dump \
+  --gz
+```

@@ -1,13 +1,20 @@
 # user:password:hash
-The **user:password:hash** command Сгенерировать хеш для пароля.
+Сгенерировать хеш для пароля.
 
-**Использование:**
+**Usage:**
 ```
-$ drupal user:password:hash [arguments] 
-$ usph  
+drupal user:password:hash [arguments]
+uph
+usph
 ```
 
-## Доступные параметры
-Параметр | Описание
+## Available arguments
+Argument | Details
 ---------|-------------
 password | Пароль(и) в текстовом формате
+
+## Examples
+* Get hash of the word "p455w0rd"
+```
+drupal user:password:hash  p455w0rd
+```

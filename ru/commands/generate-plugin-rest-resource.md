@@ -1,13 +1,14 @@
 # generate:plugin:rest:resource
-The **generate:plugin:rest:resource** command Generate plugin rest resource
+Generate plugin rest resource
 
-**Использование:**
+**Usage:**
 ```
-$ drupal generate:plugin:rest:resource [options] 
+drupal generate:plugin:rest:resource [options]
+gprr
 ```
 
-## Доступные опции
-Опция | Описание
+## Available options
+Option | Details
 -------|-------------
 --module | Имя модуля.
 --class | Plugin Rest Resource class
@@ -16,3 +17,15 @@ $ drupal generate:plugin:rest:resource [options]
 --plugin-label | Plugin Rest Resource Label
 --plugin-url | Plugin Rest Resource URL
 --plugin-states | Plugin Rest Resource States
+
+## Examples
+* Generate a rest resource plugin using GET specifying the module name, the class, the plugin id, its label, the target url and the request type
+```
+drupal generate:plugin:rest:resource  \
+  --module="modulename"  \
+  --class="DefaultRestResource"  \
+  --plugin-id="default_rest_resource"  \
+  --plugin-label="Default rest resource"  \
+  --plugin-url="http://rest.resources.example.com"  \
+  --plugin-states='GET'
+```

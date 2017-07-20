@@ -3,17 +3,24 @@ Tải xuống theme trong ứng dụng
 
 **Usage:**
 ```
-$ drupal theme:download [arguments] [options]
-$ td  
+drupal theme:download [arguments] [options]
+thd
+td
 ```
 
-## Các tùy chọn có sẵn
-Tùy chọn | Các chi tiết
+## Available options
+Option | Details
 -------|-------------
 --composer | Use --composer option for manage the theme download with Composer
 
-## Các đối số có sẵn
-Đối số | Các chi tiết
+## Available arguments
+Argument | Details
 ---------|-------------
 theme | the Theme name
 version | Theme version i.e 1.x-dev
+
+## Examples
+* Download theme specifying name and version
+```
+drupal theme:download  Alina 7.x-1.2
+```

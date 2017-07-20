@@ -1,19 +1,20 @@
 # test:run
 Egységteszt futtatása az alkalmazás számára elérhető tesztek közül
 
-**Használat:**
+**Usage:**
 ```
-$ drupal test:run [arguments] [options]
-$ tr  
+drupal test:run [arguments] [options]
+ter
+tr
 ```
 
-## Rendelkezésre álló beállítások
-Beállítás | Részletek
+## Available options
+Option | Details
 -------|-------------
 --url | commands.test.run.arguments.url
 
-## Rendelkezésre álló argumentumok
-Argumentum | Részletek
+## Available arguments
+Argument | Details
 ---------|-------------
 test-class | Tesztosztály
 test-methods | Test method(s) to be run

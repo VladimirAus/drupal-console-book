@@ -1,13 +1,25 @@
 # cron:execute
-The **cron:execute** command Выполнить реализацию крона для модуля иои выполнить все крон-задачи
+Выполнить cron реализацию для модуля иои выполнить все cron-задачи
 
-**Использование:**
+**Usage:**
 ```
-$ drupal cron:execute [arguments] 
-$ cre  
+drupal cron:execute [arguments]
+croe
+cre
 ```
 
-## Доступные параметры
-Параметр | Описание
+## Available arguments
+Argument | Details
 ---------|-------------
 module | Имя модуля.
+
+## Examples
+* Execute the cron globally
+```
+drupal cron:execute
+```
+* Execute the cron on the specified module
+```
+drupal cron:execute \
+  <module>
+```

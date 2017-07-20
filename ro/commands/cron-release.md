@@ -1,8 +1,15 @@
 # cron:release
 Lansează sistemul de blocare pentru a repermite reluarea rulării cron-ului
 
-**Folosire:**
+**Usage:**
 ```
-$ drupal cron:release
-$ crr  
+drupal cron:release
+cror
+crr
+```
+
+## Examples
+* Execute the cron globally
+```
+drupal cron:execute
 ```

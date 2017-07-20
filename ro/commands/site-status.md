@@ -1,13 +1,20 @@
 # site:status
 Vizualizează statutul de instalare (Drupal Installation status)
 
-**Folosire:**
+**Usage:**
 ```
-$ drupal site:status [options]
-$ ss  
+drupal site:status [options]
+ss
 ```
 
-## Opțiuni disponibile
-Opțiune | Detalii
+## Available options
+Option | Details
 -------|-------------
 --format | commands.site.status.options.format
+
+## Examples
+* Get drupal installation status specifying the output format as table
+```
+drupal site:status  \
+  --format="table"
+```

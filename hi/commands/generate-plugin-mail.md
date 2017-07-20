@@ -1,16 +1,27 @@
 # generate:plugin:mail
-Generate a plugin mail
+एक प्लगइन मेल उत्पन्न करें
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal generate:plugin:mail [options]
+drupal generate:plugin:mail [options]
+gpm
 ```
 
-## उपलब्ध विकल्प
-विकल्प | विवरण
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
---class | Plugin class name
---label | Plugin label
---plugin-id | Plugin id
---services | Load services from the container.
+--module | मोड्यूल का नाम।
+--class | प्लगइन क्लास नाम
+--label | प्लगइन लेबल
+--plugin-id | प्लगइन आईडी
+--services | सर्विसेज़ को container से लोड करें।
+
+## Examples
+* Generate an email plugin specifying the module name, the class, its label and the plugin id
+```
+drupal generate:plugin:mail  \
+  --module="modulename"  \
+  --class="HtmlFormatterMail"  \
+  --label="Html formatter mail"  \
+  --plugin-id="html_formatter_mail"
+```

@@ -1,21 +1,21 @@
 # config:override
 Az aktív konfiguráció értékének felülbírálása.
 
-**Használat:**
+**Usage:**
 ```
-$ drupal config:override [arguments]
-$ co  
+drupal config:override [arguments]
+co
 ```
 
-## Rendelkezésre álló argumentumok
-Argumentum | Részletek
+## Available arguments
+Argument | Details
 ---------|-------------
 name | Configuration name
 key | Kulcs
 value | Érték
 
-## Példák
+## Examples
 * A Contact modul elárasztási korlátjának beállítása 10 értékre.
 ```
-$ drupal config:override contact.settings flood.limit 10
+drupal config:override contact.settings flood.limit 10
 ```

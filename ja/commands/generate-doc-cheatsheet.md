@@ -1,14 +1,14 @@
 # generate:doc:cheatsheet
-コマンドのチートシートを生成する
+commands.generate.doc.cheatsheet.description
 
-**使い方:**
+**Usage:**
 ```
-$ drupal generate:doc:cheatsheet [options]
-$ gdc  
+drupal generate:doc:cheatsheet [options]
+gdc
 ```
 
-## 利用可能なオプション
-オプション | 詳細
+## Available options
+Option | Details
 -------|-------------
---path | PDFドキュメントを生成するパス
---wkhtmltopdf | wkhtmltopdfのバイナリがあるシステム上のパス
+--path | commands.generate.doc.cheatsheet.options.path
+--wkhtmltopdf | commands.generate.doc.cheatsheet.options.wkhtmltopdf

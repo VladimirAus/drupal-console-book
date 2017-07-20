@@ -1,19 +1,55 @@
 # generate:plugin:condition
-Generate a plugin condition.
+प्लगिन नियम उत्पन्न करें।
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal generate:plugin:condition [options]
-$ gpc  
+drupal generate:plugin:condition [options]
+gpco
+gpc
 ```
 
-## उपलब्ध विकल्प
-विकल्प | विवरण
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
---class | Plugin condition class name
---label | Plugin condition label
---plugin-id | Plugin condition id
---context-definition-id | Context definition ID
---context-definition-label | Context definition label
---context-definition-required | Context definition is required (TRUE/FALSE)
+--module | मोड्यूल का नाम।
+--class | प्लगिन नियम क्लास नाम
+--label | प्लगइन नियम उप-शीर्षक
+--plugin-id | प्लगइन नियम id
+--context-definition-id | प्रसंग परिभाषा id
+--context-definition-label | प्रसंग परिभाषा उप-शीर्षक
+--context-definition-required | प्रसंग परिभाषा आवश्यक है (सही/गलत)
+
+## Examples
+* Generate a plugin condition for a node entity type specifying the module name, the class, the label, its id and the context definition
+```
+drupal generate:plugin:condition  \
+  --module="modulename"  \
+  --class="ExampleCondition"  \
+  --label="Example condition"  \
+  --plugin-id="example_condition"  \
+  --context-definition-id="entity:node"  \
+  --context-definition-label="node"  \
+  --context-definition-required
+```
+* Generate a plugin condition for language specifying the module name, the class, the label, its id and the context definition
+```
+drupal generate:plugin:condition  \
+  --module="modulename"  \
+  --class="ExampleCondition"  \
+  --label="Example condition"  \
+  --plugin-id="example_condition"  \
+  --context-definition-id="language"  \
+  --context-definition-label="Language"  \
+  --context-definition-required
+```
+* Generate a plugin condition for role configuration specifying the module name, the class, the label, its id and the context definition
+```
+drupal generate:plugin:condition  \
+  --module="modulename"  \
+  --class="ExampleCondition"  \
+  --label="Example condition"  \
+  --plugin-id="example_condition"  \
+  --context-definition-id="entity:user_role"  \
+  --context-definition-label="user_role"  \
+  --context-definition-required
+```

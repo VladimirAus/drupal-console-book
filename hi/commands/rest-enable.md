@@ -1,13 +1,13 @@
 # rest:enable
 अनुप्रयोग के रेस्ट साधन को चालू करे
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal rest:enable [arguments]
-$ ree  
+drupal rest:enable [arguments]
+ree
 ```
 
-## उपलब्ध तर्क
-तर्क | विवरण
+## Available arguments
+Argument | Details
 ---------|-------------
-resource-id | Rest क्रमांक
+resource-id | Rest ID

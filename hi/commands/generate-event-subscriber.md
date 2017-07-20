@@ -1,17 +1,27 @@
 # generate:event:subscriber
-Generate an event subscriber
+एक घटना ग्राहक उत्पन्न करें
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal generate:event:subscriber [options]
-$ ges  
+drupal generate:event:subscriber [options]
+ges
 ```
 
-## उपलब्ध विकल्प
-विकल्प | विवरण
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
+--module | मोड्यूल का नाम।
 --name | commands.generate.service.options.name
---class | Class name
---events | Load events from the container
---services | Load services from the container.
+--class | क्लास का नाम
+--events | घटनाओ को container से लोड करें।
+--services | सर्विसेज़ को container से लोड करें।
+
+## Examples
+* Generate an event subscriber specifying the module name, its name, the class and the events to subscribe
+```
+drupal generate:event:subscriber  \
+  --module="modulename"  \
+  --name="modulename.default"  \
+  --class="DefaultSubscriber"  \
+  --events='kernel_request'
+```

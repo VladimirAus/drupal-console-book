@@ -1,14 +1,13 @@
 # site:new
-The **site:new** command Create a new Drupal project
+Download a new Drupal project
 
-**Использование:**
+**Usage:**
 ```
-$ drupal site:new [arguments] 
-$ sn  
+drupal site:new [options]
 ```
 
-## Доступные параметры
-Параметр | Описание
----------|-------------
-directory | Directory when downloading Drupal
-version | Specific Drupal version to download
+## Available options
+Option | Details
+-------|-------------
+--repository | repository
+--directory | directory

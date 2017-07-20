@@ -1,12 +1,14 @@
 # translation:cleanup
 Ficheros de limpieza de traducción
 
-**Uso:**
+**Usage:**
 ```
-$ drupal translation:cleanup [arguments]
+drupal translation:cleanup [arguments]
+tc
 ```
 
-## Argumentos disponibles
-Argumento | Detalles
+## Available arguments
+Argument | Details
 ---------|-------------
 language | Idioma al que hacer limpieza de sus ficheros contra el inglés
+library | commands.translation.cleanup.arguments.library

@@ -1,19 +1,32 @@
 # config:export:content:type
-Exportă un anumit tip de conținut și câmpurile aferente.
+Exportați un anumit tip de conținut și câmpurile aferente acestuia.
 
-**Folosire:**
+**Usage:**
 ```
-$ drupal config:export:content:type [arguments] [options]
-$ cect  
+drupal config:export:content:type [arguments] [options]
+cect
 ```
 
-## Opțiuni disponibile
-Opțiune | Detalii
+## Available options
+Option | Details
 -------|-------------
 --module | Numele Modulului.
---optional-config | Exportă tipul de conținut ca un fișier opțional de configurare YAML în modulul tău
+--optional-config | Exportați tipul de conținut ca și un fișier opțional de configurare YAML în modulul dvs.
 
-## Argumente disponibile
-Argument | Detalii
+## Available arguments
+Argument | Details
 ---------|-------------
 content-type | Content Type to be exported
+
+## Examples
+* Provide a content type  and module name
+```
+drupal config:export:content:type page \
+  --module="demo"
+```
+* If you want export content type provide the optional config
+```
+drupal config:export:content:type page \
+  --module="demo" \
+  --optional-config
+```

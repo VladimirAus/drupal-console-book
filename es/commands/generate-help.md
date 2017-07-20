@@ -1,13 +1,22 @@
 # generate:help
 Genera una implementación de hook_help()
 
-**Uso:**
+**Usage:**
 ```
-$ drupal generate:help [options]
+drupal generate:help [options]
+gh
 ```
 
-## Opciones disponibles
-Opción | Detalles
+## Available options
+Option | Details
 -------|-------------
 --module | Nombre del módulo.
 --description | Descripción del módulo
+
+## Examples
+* Generate a hook help specifying the module name and the description
+```
+drupal generate:help  \
+  --module="modulename"  \
+  --description="My Awesome Module"
+```

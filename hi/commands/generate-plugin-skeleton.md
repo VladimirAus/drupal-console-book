@@ -1,15 +1,25 @@
 # generate:plugin:skeleton
 Generate an implementation of a skeleton plugin for those plugins Drupal Console do not have a specific generator
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal generate:plugin:skeleton [options]
+drupal generate:plugin:skeleton [options]
+gps
 ```
 
-## उपलब्ध विकल्प
-विकल्प | विवरण
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
+--module | मोड्यूल का नाम।
 --plugin-id | commands.generate.plugin.options.plugin-id
---class | Plugin class name
---services | Load services from the container.
+--class | प्लगिन का क्लास नाम
+--services | सर्विसेज़ को container से लोड करें।
+
+## Examples
+* Generate a plugin skeleton specifying module name, the plugin id and the class
+```
+drupal generate:plugin:skeleton  \
+  --module="modulename"  \
+  --plugin-id="link_relation_type"  \
+  --class="DefaultLinkRelationType"
+```

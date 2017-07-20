@@ -1,13 +1,22 @@
 # generate:post:update
 commands.generate.post:update.description
 
-**Használat:**
+**Usage:**
 ```
-$ drupal generate:post:update [options]
+drupal generate:post:update [options]
+gpu
 ```
 
-## Rendelkezésre álló beállítások
-Beállítás | Részletek
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
+--module | A modul neve.
 --post-update-name | Post Update Name
+
+## Examples
+* Generate an implementation of post update hook specifying the module name and the post update name
+```
+drupal generate:post:update  \
+  --module="modulename"  \
+  --post-update-name="PostUpdateName"
+```

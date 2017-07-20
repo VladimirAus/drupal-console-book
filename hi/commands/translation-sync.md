@@ -1,17 +1,19 @@
 # translation:sync
-Sync translation files
+commands.translation.sync.description
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal translation:sync [arguments] [options]
+drupal translation:sync [arguments] [options]
+tsy
 ```
 
-## उपलब्ध विकल्प
-विकल्प | विवरण
+## Available options
+Option | Details
 -------|-------------
 --file | commands.translation.stats.options.file
 
-## उपलब्ध तर्क
-तर्क | विवरण
+## Available arguments
+Argument | Details
 ---------|-------------
-language | Language to syncronize against English source files
+language | commands.translation.sync.arguments.language
+library | commands.translation.sync.arguments.library

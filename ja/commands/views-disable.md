@@ -1,13 +1,24 @@
 # views:disable
 Viewsを無効化する
 
-**使い方:**
+**Usage:**
 ```
-$ drupal views:disable [arguments]
-$ vdi  
+drupal views:disable [arguments]
+vd
+vdi
 ```
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
-view-id | ビューのID
+view-id | commands.views.debug.arguments.view-id
+
+## Examples
+* Disable content view
+```
+drupal views:disable  content
+```
+* Disable frontpage view
+```
+drupal views:disable  frontpage
+```

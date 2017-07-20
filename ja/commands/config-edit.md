@@ -1,14 +1,25 @@
 # config:edit
 設定を編集する
 
-**使い方:**
+**Usage:**
 ```
-$ drupal config:edit [arguments]
-$ cdit  
+drupal config:edit [arguments]
+ced
+cdit
 ```
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
 config-name | 設定の名前
 editor | 編集に使用するエディタ
+
+## Examples
+* Edit system cron configurations with "vim" (default editor).
+```
+drupal config:edit system.cron
+```
+* Edit system cron configurations with "gedit".
+```
+drupal config:edit system.cron gedit
+```

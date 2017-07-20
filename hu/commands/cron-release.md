@@ -1,8 +1,15 @@
 # cron:release
 Cron rendszerzár feloldása a cron újbóli futtatásához
 
-**Használat:**
+**Usage:**
 ```
-$ drupal cron:release
-$ crr  
+drupal cron:release
+cror
+crr
+```
+
+## Examples
+* Execute the cron globally
+```
+drupal cron:execute
 ```

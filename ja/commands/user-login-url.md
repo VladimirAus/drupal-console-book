@@ -1,13 +1,20 @@
 # user:login:url
 ワンタイムログインURLを生成する
 
-**使い方:**
+**Usage:**
 ```
-$ drupal user:login:url [arguments]
-$ uslu  
+drupal user:login:url [arguments]
+ulu
+uslu
 ```
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
 user-id | ユーザーID
+
+## Examples
+* Get one time login url for user id 1
+```
+drupal user:login:url  1
+```

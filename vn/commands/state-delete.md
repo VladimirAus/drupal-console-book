@@ -3,10 +3,17 @@ Delete State
 
 **Usage:**
 ```
-$ drupal state:delete [arguments]
+drupal state:delete [arguments]
+std
 ```
 
-## Các đối số có sẵn
-Đối số | Các chi tiết
+## Available arguments
+Argument | Details
 ---------|-------------
 name | State name.
+
+## Examples
+* Delete state specifying the state name
+```
+drupal state:delete  comment.maintain_entity_statistics
+```

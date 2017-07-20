@@ -1,14 +1,24 @@
 # generate:routesubscriber
 Generate a RouteSubscriber
 
-**使い方:**
+**Usage:**
 ```
-$ drupal generate:routesubscriber [options]
+drupal generate:routesubscriber [options]
+gr
 ```
 
-## 利用可能なオプション
-オプション | 詳細
+## Available options
+Option | Details
 -------|-------------
 --module | モジュール名
 --name | Service name
 --class | Class name
+
+## Examples
+* Generate a route subscriber specifying the module name, the route name and its class
+```
+drupal generate:routesubscriber  \
+  --module="modulename"  \
+  --name="modulename.route_subscriber"  \
+  --class="RouteSubscriber"
+```

@@ -3,11 +3,22 @@ Tắt một View
 
 **Usage:**
 ```
-$ drupal views:disable [arguments]
-$ vdi  
+drupal views:disable [arguments]
+vd
+vdi
 ```
 
-## Các đối số có sẵn
-Đối số | Các chi tiết
+## Available arguments
+Argument | Details
 ---------|-------------
-view-id | View ID
+view-id | commands.views.debug.arguments.view-id
+
+## Examples
+* Disable content view
+```
+drupal views:disable  content
+```
+* Disable frontpage view
+```
+drupal views:disable  frontpage
+```

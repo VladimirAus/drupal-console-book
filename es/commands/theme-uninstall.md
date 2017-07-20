@@ -1,12 +1,20 @@
 # theme:uninstall
 Desinstalar tema o temas en la aplicación
 
-**Uso:**
+**Usage:**
 ```
-$ drupal theme:uninstall [arguments]
+drupal theme:uninstall [arguments]
+thu
+tu
 ```
 
-## Argumentos disponibles
-Argumento | Detalles
+## Available arguments
+Argument | Details
 ---------|-------------
 theme | commands.theme.uninstall.options.module
+
+## Examples
+* Uninstall theme specifying the name
+```
+drupal theme:uninstall  mytheme
+```

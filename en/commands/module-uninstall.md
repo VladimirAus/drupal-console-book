@@ -3,8 +3,8 @@ Uninstall module or modules in the application
 
 **Usage:**
 ```
-$ drupal module:uninstall [arguments] [options]
-$ mou  
+drupal module:uninstall [arguments] [options]
+mou
 ```
 
 ## Available options
@@ -17,3 +17,9 @@ Option | Details
 Argument | Details
 ---------|-------------
 module | Module name (press <return> to stop adding modules)
+
+## Examples
+* Uninstall the module specifying the module name
+```
+drupal module:uninstall  modulename
+```

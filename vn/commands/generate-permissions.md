@@ -1,14 +1,14 @@
 # generate:permissions
-Generate module permissions
+commands.generate.permission.description
 
 **Usage:**
 ```
-$ drupal generate:permissions [options]
-$ gp  
+drupal generate:permissions [options]
+gp
 ```
 
-## Các tùy chọn có sẵn
-Tùy chọn | Các chi tiết
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
---permissions | Create permissions.
+--module | Tên module.
+--permissions | Tạo các quyền.

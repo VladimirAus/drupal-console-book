@@ -1,21 +1,21 @@
 # config:override
 व्यवस्था निधि को सक्रिय डायरेक्टरी में चढ़ा दें।
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal config:override [arguments]
-$ co  
+drupal config:override [arguments]
+co
 ```
 
-## उपलब्ध तर्क
-तर्क | विवरण
+## Available arguments
+Argument | Details
 ---------|-------------
 name | Configuration name
 key | कुंजी
 value | निधि
 
-## उदाहरण
+## Examples
 * "flood" मॉड्यूल संपर्क 10 का मूल्य निर्धारित किया है।
 ```
-$ drupal config:override contact.settings flood.limit 10
+drupal config:override contact.settings flood.limit 10
 ```

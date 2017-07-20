@@ -1,7 +1,7 @@
 # about
 Muestra información básica sobre el proyecto Drupal Console
 
-**Uso:**
+**Usage:**
 ```
-$ drupal about
+drupal about
 ```

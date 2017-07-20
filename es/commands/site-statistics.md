@@ -1,7 +1,8 @@
 # site:statistics
 Muestra las estadísticas actuales del sitio web.
 
-**Uso:**
+**Usage:**
 ```
-$ drupal site:statistics
+drupal site:statistics
+sst
 ```

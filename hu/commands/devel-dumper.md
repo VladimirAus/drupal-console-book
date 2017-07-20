@@ -1,12 +1,13 @@
 # devel:dumper
 Change the devel dumper plugin
 
-**Használat:**
+**Usage:**
 ```
-$ drupal devel:dumper [arguments]
+drupal devel:dumper [arguments]
+dd
 ```
 
-## Rendelkezésre álló argumentumok
-Argumentum | Részletek
+## Available arguments
+Argument | Details
 ---------|-------------
 dumper | Name of the devel dumper plugin

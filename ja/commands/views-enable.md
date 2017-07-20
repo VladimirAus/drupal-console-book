@@ -1,13 +1,23 @@
 # views:enable
 Viewsを有効化する
 
-**使い方:**
+**Usage:**
 ```
-$ drupal views:enable [arguments]
-$ ve  
+drupal views:enable [arguments]
+ve
 ```
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
-view-id | ビューのID
+view-id | commands.views.debug.arguments.view-id
+
+## Examples
+* Enable content view
+```
+drupal views:enable  content
+```
+* Enable frontpage view
+```
+drupal views:enable  frontpage
+```

@@ -1,18 +1,39 @@
 # generate:service
-Generate service
+Szolgáltatás létrehozása
 
-**Használat:**
+**Usage:**
 ```
-$ drupal generate:service [options]
-$ gs  
+drupal generate:service [options]
+gs
 ```
 
-## Rendelkezésre álló beállítások
-Beállítás | Részletek
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
+--module | A modul neve.
 --name | commands.generate.service.options.name
---class | Class name
+--class | Osztálynév
 --interface | commands.common.service.options.interface
---services | Load services from the container.
---path_service | Path
+--interface-name | commands.common.service.options.interface-name
+--services | Szolgáltatások betöltése a tárolóból.
+--path-service | Path
+
+## Examples
+* Generate a services without interface specifying the module name, the service name, the class and its path
+```
+drupal generate:service  \
+  --module="modulename"  \
+  --name="modulename.default"  \
+  --class="DefaultService"  \
+  --path-service="/modules/custom/modulename/src/"
+```
+* Generate a services with interface specifying the module name, the service name, the class, the interface name and its path
+```
+drupal generate:service  \
+  --module="modulename"  \
+  --name="modulename.default"  \
+  --class="DefaultService"  \
+  --interface  \
+  --interface-name="InterfaceName"  \
+  --path-service="/modules/custom/modulename/src/"
+```

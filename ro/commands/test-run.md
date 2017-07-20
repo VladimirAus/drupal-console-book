@@ -1,19 +1,20 @@
 # test:run
 Execută un test dintre testele disponibile in aplicaţie.
 
-**Folosire:**
+**Usage:**
 ```
-$ drupal test:run [arguments] [options]
-$ tr  
+drupal test:run [arguments] [options]
+ter
+tr
 ```
 
-## Opțiuni disponibile
-Opțiune | Detalii
+## Available options
+Option | Details
 -------|-------------
 --url | commands.test.run.arguments.url
 
-## Argumente disponibile
-Argument | Detalii
+## Available arguments
+Argument | Details
 ---------|-------------
 test-class | Clasa de test
 test-methods | Test method(s) to be run

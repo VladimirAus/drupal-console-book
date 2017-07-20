@@ -1,14 +1,24 @@
 # generate:routesubscriber
-The **generate:routesubscriber** command Generate a RouteSubscriber
+Generate a RouteSubscriber
 
-**Использование:**
+**Usage:**
 ```
-$ drupal generate:routesubscriber [options] 
+drupal generate:routesubscriber [options]
+gr
 ```
 
-## Доступные опции
-Опция | Описание
+## Available options
+Option | Details
 -------|-------------
 --module | Имя модуля.
 --name | Service name
 --class | Class name
+
+## Examples
+* Generate a route subscriber specifying the module name, the route name and its class
+```
+drupal generate:routesubscriber  \
+  --module="modulename"  \
+  --name="modulename.route_subscriber"  \
+  --class="RouteSubscriber"
+```

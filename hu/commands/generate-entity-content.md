@@ -1,19 +1,43 @@
 # generate:entity:content
-Generate a new content entity
+Új tartalom entitás létrehozása
 
-**Használat:**
+**Usage:**
 ```
-$ drupal generate:entity:content [options]
-$ gect  
+drupal generate:entity:content [options]
+geco
+gect
 ```
 
-## Rendelkezésre álló beállítások
-Beállítás | Részletek
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
---entity-class | The content entity class
---entity-name | The content entity name
---base-path | The base-path for the content entity routes
---label | The label
---has-bundles | Entity has bundles
+--module | A modul neve.
+--entity-class | A tartalom entitás osztály
+--entity-name | A tartalom entitás neve
+--base-path | A tartalom entitás útvonalak alapútvonala
+--label | A felirat
+--has-bundles | Az entitás nem rendelkezik mezőcsoportokkal
 --is-translatable | Content entity translatable
+--revisionable | commands.generate.entity.content.options.revisionable
+
+## Examples
+* Generate a content entity specifying the module, the entity class, the entity name, its path and label
+```
+drupal generate:entity:content  \
+  --module="modulename"  \
+  --entity-class="DefaultEntity"  \
+  --entity-name="default_entity"  \
+  --base-path="/admin/structure"  \
+  --label="Default entity"
+```
+* Generate a translatable and revisionable content entity specifying the module, the entity class, the entity name, its path and label
+```
+drupal generate:entity:content  \
+  --module="modulename"  \
+  --entity-class="DefaultEntity"  \
+  --entity-name="default_entity"  \
+  --base-path="/admin/structure"  \
+  --label="Default entity"  \
+  --is-translatable  \
+  --revisionable
+```

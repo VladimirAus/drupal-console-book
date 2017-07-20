@@ -1,12 +1,20 @@
 # generate:module:file
 Generate a .module file
 
-**Folosire:**
+**Usage:**
 ```
-$ drupal generate:module:file [options]
+drupal generate:module:file [options]
+gmf
 ```
 
-## Opțiuni disponibile
-Opțiune | Detalii
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
+--module | Numele Modulului.
+
+## Examples
+* Generate the .module file specifying the module name
+```
+drupal generate:module:file  \
+  --module="modulename"
+```

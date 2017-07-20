@@ -1,18 +1,26 @@
 # module:update
 コアやモジュールを更新
 
-**使い方:**
+**Usage:**
 ```
-$ drupal module:update [arguments] [options]
+drupal module:update [arguments] [options]
+moup
 ```
 
-## 利用可能なオプション
-オプション | 詳細
+## Available options
+Option | Details
 -------|-------------
 --composer | Composerを使用してモジュールを更新
 --simulate | Composerを使用して更新をシミュレーション
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
 module | アップデートするモジュール名 (複数指定する場合はスペース区切り)。空の場合はComposerで管理されているコアおよび全てのモジュールが対象になります。
+
+## Examples
+* Update module specifying module name and composer parameter
+```
+drupal module:update  modulename  \
+  --composer
+```

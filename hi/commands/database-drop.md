@@ -1,12 +1,20 @@
 # database:drop
 एक दिए गए डेटाबेस में सभी टेबल्स ड्राप।
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal database:drop [arguments]
+drupal database:drop [arguments]
+dbd
 ```
 
-## उपलब्ध तर्क
-तर्क | विवरण
+## Available arguments
+Argument | Details
 ---------|-------------
 database | Settings.php से डाटाबेस कुंज
+
+## Examples
+* Drop the tables on the database specified on the argument
+```
+drupal database:drop \
+  <database>
+```

@@ -1,17 +1,28 @@
 # generate:plugin:fieldformatter
-Generate field formatter plugin.
+खाना formatter प्लगिन उत्पन्न करें
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal generate:plugin:fieldformatter [options]
-$ gpff  
+drupal generate:plugin:fieldformatter [options]
+gpff
 ```
 
-## उपलब्ध विकल्प
-विकल्प | विवरण
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
---class | Plugin class name
---label | Plugin label
---plugin-id | Plugin id
---field-type | Field type the plugin can be used with
+--module | मोड्यूल का नाम।
+--class | प्लगिन क्लास का नाम
+--label | प्लगिन उप-शीर्षक
+--plugin-id | प्लगिन id
+--field-type | खाना प्रकार प्लगिन इस्तेमाल किया जा सकता
+
+## Examples
+* Generate a a text field formatter plugin specifying the module name, the class, the label its plugin id and the field type
+```
+drupal generate:plugin:fieldformatter  \
+  --module="modulename"  \
+  --class="ExampleFieldFormatter"  \
+  --label="Example field formatter"  \
+  --plugin-id="example_field_formatter"  \
+  --field-type="text"
+```

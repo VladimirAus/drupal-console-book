@@ -1,14 +1,21 @@
 # user:password:reset
 Adott felhasználó jelszavának alaphelyzetbe állítása.
 
-**Használat:**
+**Usage:**
 ```
-$ drupal user:password:reset [arguments]
-$ uspr  
+drupal user:password:reset [arguments]
+upr
+uspr
 ```
 
-## Rendelkezésre álló argumentumok
-Argumentum | Részletek
+## Available arguments
+Argument | Details
 ---------|-------------
 user | Felhasználói azonosító
 password | Szövegformátumú jelszó
+
+## Examples
+* Update password specifying the user id and the new password
+```
+drupal user:password:reset  2 p455w0rd
+```

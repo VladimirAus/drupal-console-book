@@ -1,19 +1,19 @@
 # list
 Listele de comenzi
 
-**Folosire:**
+**Usage:**
 ```
-$ drupal list [arguments] [options]
+drupal list [arguments] [options]
 ```
 
-## Opțiuni disponibile
-Opțiune | Detalii
+## Available options
+Option | Details
 -------|-------------
 --xml | Afișarea listei ca XML
 --raw | Afișarea brută a listei de comenzi
 --format | Formatul de afișare (txt, xml, json, sau md)
 
-## Argumente disponibile
-Argument | Detalii
+## Available arguments
+Argument | Details
 ---------|-------------
 namespace | Numele spațiului de lucru

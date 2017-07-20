@@ -1,12 +1,14 @@
 # init
-Copy configuration files to user home directory.
+Copy configuration files.
 
 **Usage:**
 ```
-$ drupal init [options]
+drupal init [options]
 ```
 
 ## Available options
 Option | Details
 -------|-------------
---override | Override configurations files
+--destination | Destination directory to copy files
+--override | Override configurations files flag
+--autocomplete | Autocomplete tool files flag.

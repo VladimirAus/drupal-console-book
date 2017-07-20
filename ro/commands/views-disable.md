@@ -1,13 +1,24 @@
 # views:disable
 Dezactivează un View
 
-**Folosire:**
+**Usage:**
 ```
-$ drupal views:disable [arguments]
-$ vdi  
+drupal views:disable [arguments]
+vd
+vdi
 ```
 
-## Argumente disponibile
-Argument | Detalii
+## Available arguments
+Argument | Details
 ---------|-------------
-view-id | ID-ul view-ului
+view-id | commands.views.debug.arguments.view-id
+
+## Examples
+* Disable content view
+```
+drupal views:disable  content
+```
+* Disable frontpage view
+```
+drupal views:disable  frontpage
+```

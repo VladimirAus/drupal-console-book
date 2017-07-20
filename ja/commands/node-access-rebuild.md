@@ -1,18 +1,19 @@
 # node:access:rebuild
 ノードのアクセス権限を再構築します。全てのコンテンツに対する権限設定を削除し、現在のモジュールおよび設定で置き換えます。
 
-**使い方:**
+**Usage:**
 ```
-$ drupal node:access:rebuild [options]
+drupal node:access:rebuild [options]
+nar
 ```
 
-## 利用可能なオプション
-オプション | 詳細
+## Available options
+Option | Details
 -------|-------------
 --batch | バッチモードで処理する
 
-## 例
+## Examples
 * ノードのアクセス権限を再構築
 ```
-$ drupal node:access:rebuild --batch
+drupal node:access:rebuild --batch
 ```

@@ -1,12 +1,23 @@
 # image:styles:flush
 Execute flush function by image style or execute all flush images styles
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal image:styles:flush [arguments]
+drupal image:styles:flush [arguments]
+isf
 ```
 
-## उपलब्ध तर्क
-तर्क | विवरण
+## Available arguments
+Argument | Details
 ---------|-------------
 styles | The Images Styles name.
+
+## Examples
+* Flush large image style
+```
+drupal image:styles:flush  large
+```
+* Flush thumbnail image style
+```
+drupal image:styles:flush  thumbnail
+```

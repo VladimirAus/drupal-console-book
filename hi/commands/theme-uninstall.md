@@ -1,13 +1,20 @@
 # theme:uninstall
 विषय की स्थापना रद्द करें या विषयों के आवेदन में
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal theme:uninstall [arguments]
-$ tu  
+drupal theme:uninstall [arguments]
+thu
+tu
 ```
 
-## उपलब्ध तर्क
-तर्क | विवरण
+## Available arguments
+Argument | Details
 ---------|-------------
 theme | commands.theme.uninstall.options.module
+
+## Examples
+* Uninstall theme specifying the name
+```
+drupal theme:uninstall  mytheme
+```

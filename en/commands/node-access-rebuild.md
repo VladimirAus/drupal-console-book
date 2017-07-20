@@ -1,9 +1,10 @@
 # node:access:rebuild
-Rebuild node access permissions. Rebuilding will remove all privileges to content and replace them with permissions based on the current modules and settings.
+Rebuild node access permissions.
 
 **Usage:**
 ```
-$ drupal node:access:rebuild [options]
+drupal node:access:rebuild [options]
+nar
 ```
 
 ## Available options
@@ -14,5 +15,5 @@ Option | Details
 ## Examples
 * Rebuild node access permissions
 ```
-$ drupal node:access:rebuild --batch
+drupal node:access:rebuild --batch
 ```

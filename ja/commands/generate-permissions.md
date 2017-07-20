@@ -1,14 +1,14 @@
 # generate:permissions
-Generate module permissions
+commands.generate.permission.description
 
-**使い方:**
+**Usage:**
 ```
-$ drupal generate:permissions [options]
-$ gp  
+drupal generate:permissions [options]
+gp
 ```
 
-## 利用可能なオプション
-オプション | 詳細
+## Available options
+Option | Details
 -------|-------------
 --module | モジュール名
 --permissions | 権限を作成する

@@ -1,20 +1,33 @@
 # config:export:view
-एक व्यू को YAML संरूप में एक्सपोर्ट करें ताकि वो किसी दूसरे वेबसाइट में पुनर्प्रयोग किया जाये।
+अन्य वेबसाइट में पुन: उपयोग करने के लिए एक प्रोवाइडेड मॉड्यूल के अंदर YAML फॉर्मेट में एक व्यू एक्सपोर्ट करे।
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal config:export:view [arguments] [options]
-$ cev  
+drupal config:export:view [arguments] [options]
+cev
 ```
 
-## उपलब्ध विकल्प
-विकल्प | विवरण
+## Available options
+Option | Details
 -------|-------------
 --module | मोड्यूल का नाम।
---optional-config | व्यू को ऐच्छिक YAML कॉन्फिग स्वरूप अपने मॉड्यूल में निर्यात करें
---include-module-dependencies | व्यू मॉड्यूल निर्भरता को मॉड्यूल info YAML फाइल में सम्मिलित करें
+--optional-config | अपने मॉड्यूल में एक वैकल्पिक YAML कॉन्फ़िगरेशन के रूप में व्यू एक्सपोर्ट करे
+--include-module-dependencies | मॉड्यूल इन्फो YAML फाइल में व्यू मॉड्यूल निर्भरता को शामिल करें
 
-## उपलब्ध तर्क
-तर्क | विवरण
+## Available arguments
+Argument | Details
 ---------|-------------
 view-id | व्यू आईडी
+
+## Examples
+* Provide a view id
+```
+drupal config:export:view viewid
+```
+* You can provide the interactive values like parameter.
+```
+drupal config:export:view viewid \
+  --module="modulename" \
+  --optional-config \
+  --include-module-dependencies
+```

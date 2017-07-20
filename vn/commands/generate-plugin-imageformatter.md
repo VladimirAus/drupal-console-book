@@ -1,16 +1,26 @@
 # generate:plugin:imageformatter
-Generate image formatter plugin.
+Phát sinh một image formatter plugin.
 
 **Usage:**
 ```
-$ drupal generate:plugin:imageformatter [options]
-$ gpif  
+drupal generate:plugin:imageformatter [options]
+gpif
 ```
 
-## Các tùy chọn có sẵn
-Tùy chọn | Các chi tiết
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
---class | Plugin class name
---label | Plugin label
+--module | Tên module.
+--class | Tên plugin class
+--label | Nhãn plugin
 --plugin-id | Plugin id
+
+## Examples
+* Generate a image formatter plugin specifying the module name, the class, its label and the plugin id
+```
+drupal generate:plugin:imageformatter  \
+  --module="modulename"  \
+  --class="ExampleImageFormatter"  \
+  --label="Example image formatter"  \
+  --plugin-id="example_image_formatter"
+```

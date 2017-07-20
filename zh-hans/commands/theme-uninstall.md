@@ -1,0 +1,20 @@
+# theme:uninstall
+卸载程序的一个或多个外观主题
+
+**Usage:**
+```
+drupal theme:uninstall [arguments]
+thu
+tu
+```
+
+## Available arguments
+Argument | Details
+---------|-------------
+theme | commands.theme.uninstall.options.module
+
+## Examples
+* Uninstall theme specifying the name
+```
+drupal theme:uninstall  mytheme
+```

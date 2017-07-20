@@ -1,13 +1,23 @@
 # site:maintenance
 Activează modul de mentenanţă
 
-**Folosire:**
+**Usage:**
 ```
-$ drupal site:maintenance [arguments]
-$ sma  
+drupal site:maintenance [arguments]
+sma
 ```
 
-## Argumente disponibile
-Argument | Detalii
+## Available arguments
+Argument | Details
 ---------|-------------
 mode | commands.site.maintenance.arguments.mode[on/off]
+
+## Examples
+* Switch on maintenance
+```
+drupal site:maintenance  on
+```
+* Switch off maintenance
+```
+drupal site:maintenance  off
+```

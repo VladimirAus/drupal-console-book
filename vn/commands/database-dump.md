@@ -3,15 +3,29 @@ Dump cấu trúc và nội dung của 1 cơ sở dữ liệu
 
 **Usage:**
 ```
-$ drupal database:dump [arguments] [options]
+drupal database:dump [arguments] [options]
+dbdu
 ```
 
-## Các tùy chọn có sẵn
-Tùy chọn | Các chi tiết
+## Available options
+Option | Details
 -------|-------------
---file | commands.database.dump.option.file
+--file |  Tên file cho database backup của bạn
+--gz | Pass this option if you want the sql result file gzipped
 
-## Các đối số có sẵn
-Đối số | Các chi tiết
+## Available arguments
+Argument | Details
 ---------|-------------
 database | Database key từ settings.php
+
+## Examples
+* Dump default database or the one specified on the argument
+```
+drupal database:dump \
+  <database>
+```
+* Dump in gz compressed format
+```
+drupal database:dump \
+  --gz
+```

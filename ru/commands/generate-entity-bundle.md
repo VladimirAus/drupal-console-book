@@ -1,15 +1,24 @@
 # generate:entity:bundle
-The **generate:entity:bundle** command Generate a new content type (node / entity bundle)
+Generate a new content type (node / entity bundle)
 
-**Использование:**
+**Usage:**
 ```
-$ drupal generate:entity:bundle [options] 
-$ geb  
+drupal generate:entity:bundle [options]
+geb
 ```
 
-## Доступные опции
-Опция | Описание
+## Available options
+Option | Details
 -------|-------------
 --module | Имя модуля.
 --bundle-name | The content type's machine name
 --bundle-title | The content type's human-readable name
+
+## Examples
+* Generate bundle entity specifying the module, the bundle name and its title
+```
+drupal generate:entity:bundle  \
+  --module="modulename"  \
+  --bundle-name="default"  \
+  --bundle-title="default"
+```

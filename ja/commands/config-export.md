@@ -1,14 +1,31 @@
 # config:export
 設定をエクスポートする
 
-**使い方:**
+**Usage:**
 ```
-$ drupal config:export [options]
-$ ce  
+drupal config:export [options]
+ce
 ```
 
-## 利用可能なオプション
-オプション | 詳細
+## Available options
+Option | Details
 -------|-------------
---directory | 設定をエクスポートするエクスポートするディレクトリ
---tar | セットした場合、設定はアーカイブファイルとしてエクスポートされます。
+--directory | Define the export directory to save the configuration output.
+--tar | If set, the configuration will be exported to an archive file.
+--remove-uuid | If set, the configuration will be exported without uuid key.
+--remove-config-hash | If set, the configuration will be exported without the default site hash key.
+
+## Examples
+* Optional you can add the path to export
+```
+drupal config:export  \
+  --directory="path/to/export"
+```
+* If export will be in a compressed file and/or if uuid and config hashes will be removed.
+```
+drupal config:export  \
+  --directory="path/to/export" \
+  --tar \
+  --remove-uuid \
+  --remove-config-hash
+```

@@ -1,12 +1,13 @@
 # generate:doc:data
-Generate documentations for Commands.
+commands.generate.doc.data.description
 
-**Használat:**
+**Usage:**
 ```
-$ drupal generate:doc:data [options]
+drupal generate:doc:data [options]
+gdda
 ```
 
-## Rendelkezésre álló beállítások
-Beállítás | Részletek
+## Available options
+Option | Details
 -------|-------------
---file | The file to render the command data
+--file | commands.generate.doc.data.options.file

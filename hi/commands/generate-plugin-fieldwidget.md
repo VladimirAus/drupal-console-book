@@ -1,17 +1,28 @@
 # generate:plugin:fieldwidget
-Generate field widget plugin.
+खाना विजेट प्लगिन उत्पन्न करें
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal generate:plugin:fieldwidget [options]
-$ gpfw  
+drupal generate:plugin:fieldwidget [options]
+gpfw
 ```
 
-## उपलब्ध विकल्प
-विकल्प | विवरण
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
---class | Plugin class name
---label | Plugin label
---plugin-id | Plugin id
---field-type | Field type the plugin can be used with
+--module | मोड्यूल का नाम।
+--class | प्लगिन का क्लास नाम
+--label | प्लगिन का उप-शीर्षक
+--plugin-id | प्लगिन id
+--field-type | खाना प्रकार प्लगिन इस्तेमाल किया जा सकता
+
+## Examples
+* Generate a text type field widget plugin specifying the module name, the class, its label, the plugin id and the field type
+```
+drupal generate:plugin:fieldwidget  \
+  --module="modulename"  \
+  --class="ExampleFieldWidget"  \
+  --label="Example field widget"  \
+  --plugin-id="example_field_widget"  \
+  --field-type="text"
+```

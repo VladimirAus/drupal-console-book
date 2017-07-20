@@ -1,7 +1,8 @@
 # site:statistics
 サイトの統計情報を表示する
 
-**使い方:**
+**Usage:**
 ```
-$ drupal site:statistics
+drupal site:statistics
+sst
 ```

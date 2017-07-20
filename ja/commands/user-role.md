@@ -1,14 +1,25 @@
 # user:role
 ユーザーの役割を追加・削除する
 
-**使い方:**
+**Usage:**
 ```
-$ drupal user:role [arguments]
+drupal user:role [arguments]
+ur
 ```
 
-## 利用可能な引数
-引数 | 詳細
+## Available arguments
+Argument | Details
 ---------|-------------
 operation | commands.user.role.operation
 user | commands.user.role.user
 role | commands.user.role.role
+
+## Examples
+* Add administrator role to the user admin specifying the username and the role
+```
+drupal user:role  add admin administrator
+```
+* Remove administrator role from the user admin specifying the username and the role
+```
+drupal user:role  remove admin administrator
+```

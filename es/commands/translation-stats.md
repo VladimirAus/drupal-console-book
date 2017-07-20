@@ -1,17 +1,19 @@
 # translation:stats
 Genera estadísticas de traducción
 
-**Uso:**
+**Usage:**
 ```
-$ drupal translation:stats [arguments] [options]
+drupal translation:stats [arguments] [options]
+ts
 ```
 
-## Opciones disponibles
-Opción | Detalles
+## Available options
+Option | Details
 -------|-------------
 --format | Define el formato de salida ( table|markdown )
 
-## Argumentos disponibles
-Argumento | Detalles
+## Available arguments
+Argument | Details
 ---------|-------------
 language | Idioma para generar estadísticas de traducción contra el inglés
+library | commands.translation.stats.arguments.library

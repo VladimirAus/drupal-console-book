@@ -1,18 +1,19 @@
 # node:access:rebuild
 Reconstruir los permisos de acceso a nodos. La reconstrucción eliminará todos los privilegios al contenudo y los reemplazará con permisos basado en los módulos y configuración actual,
 
-**Uso:**
+**Usage:**
 ```
-$ drupal node:access:rebuild [options]
+drupal node:access:rebuild [options]
+nar
 ```
 
-## Opciones disponibles
-Opción | Detalles
+## Available options
+Option | Details
 -------|-------------
 --batch | Procesar en modo batch.
 
-## Ejemplos
+## Examples
 * Reconstruir los permisos de acceso a nodos
 ```
-$ drupal node:access:rebuild --batch
+drupal node:access:rebuild --batch
 ```

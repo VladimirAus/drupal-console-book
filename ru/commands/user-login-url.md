@@ -1,13 +1,20 @@
 # user:login:url
-The **user:login:url** command Возвращает одноразовый url для входа.
+Возвращает одноразовый url для входа.
 
-**Использование:**
+**Usage:**
 ```
-$ drupal user:login:url [arguments] 
-$ uslu  
+drupal user:login:url [arguments]
+ulu
+uslu
 ```
 
-## Доступные параметры
-Параметр | Описание
+## Available arguments
+Argument | Details
 ---------|-------------
-user-id | ID пользователя.
+user-id | Идентификатор пользователя.
+
+## Examples
+* Get one time login url for user id 1
+```
+drupal user:login:url  1
+```

@@ -1,14 +1,15 @@
 # generate:plugin:condition
 Generate a plugin condition.
 
-**使い方:**
+**Usage:**
 ```
-$ drupal generate:plugin:condition [options]
-$ gpc  
+drupal generate:plugin:condition [options]
+gpco
+gpc
 ```
 
-## 利用可能なオプション
-オプション | 詳細
+## Available options
+Option | Details
 -------|-------------
 --module | モジュール名
 --class | Plugin condition class name
@@ -17,3 +18,38 @@ $ gpc
 --context-definition-id | Context definition ID
 --context-definition-label | Context definition label
 --context-definition-required | Context definition is requiered (TRUE/FALSE)
+
+## Examples
+* Generate a plugin condition for a node entity type specifying the module name, the class, the label, its id and the context definition
+```
+drupal generate:plugin:condition  \
+  --module="modulename"  \
+  --class="ExampleCondition"  \
+  --label="Example condition"  \
+  --plugin-id="example_condition"  \
+  --context-definition-id="entity:node"  \
+  --context-definition-label="node"  \
+  --context-definition-required
+```
+* Generate a plugin condition for language specifying the module name, the class, the label, its id and the context definition
+```
+drupal generate:plugin:condition  \
+  --module="modulename"  \
+  --class="ExampleCondition"  \
+  --label="Example condition"  \
+  --plugin-id="example_condition"  \
+  --context-definition-id="language"  \
+  --context-definition-label="Language"  \
+  --context-definition-required
+```
+* Generate a plugin condition for role configuration specifying the module name, the class, the label, its id and the context definition
+```
+drupal generate:plugin:condition  \
+  --module="modulename"  \
+  --class="ExampleCondition"  \
+  --label="Example condition"  \
+  --plugin-id="example_condition"  \
+  --context-definition-id="entity:user_role"  \
+  --context-definition-label="user_role"  \
+  --context-definition-required
+```

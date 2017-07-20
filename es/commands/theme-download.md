@@ -1,18 +1,26 @@
 # theme:download
 Descarga un tema para la aplicación
 
-**Uso:**
+**Usage:**
 ```
-$ drupal theme:download [arguments] [options]
+drupal theme:download [arguments] [options]
+thd
+td
 ```
 
-## Opciones disponibles
-Opción | Detalles
+## Available options
+Option | Details
 -------|-------------
 --composer | Use la opción --composer para llevar a cabo la descarga del tema con Composer
 
-## Argumentos disponibles
-Argumento | Detalles
+## Available arguments
+Argument | Details
 ---------|-------------
 theme | El nombre del tema
 version | Versión del tema, por ejemplo, 1.x-dev
+
+## Examples
+* Download theme specifying name and version
+```
+drupal theme:download  Alina 7.x-1.2
+```

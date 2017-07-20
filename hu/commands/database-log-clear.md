@@ -1,19 +1,34 @@
 # database:log:clear
 Események eltávolítása a DBLog táblából, rendelkezésre állnak szűrők
 
-**Használat:**
+**Usage:**
 ```
-$ drupal database:log:clear [arguments] [options]
+drupal database:log:clear [arguments] [options]
+dblc
 ```
 
-## Rendelkezésre álló beállítások
-Beállítás | Részletek
+## Available options
+Option | Details
 -------|-------------
 --type | Filter events by a specific type
 --severity | Filter events by a specific level of severity
 --user-id | Filter events by a specific user id
 
-## Rendelkezésre álló argumentumok
-Argumentum | Részletek
+## Available arguments
+Argument | Details
 ---------|-------------
 event-id | DBLog event ID
+
+## Examples
+* Clear the database log from DBLog table
+```
+drupal database:log:clear \
+  <database>
+```
+* Clear the database log from DBLog table using filters
+```
+drupal database:log:clear \
+  <database> \
+  --type=TYPE \
+  --severity=SEVERITY
+```

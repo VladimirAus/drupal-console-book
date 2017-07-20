@@ -1,19 +1,19 @@
 # help
 Muestra ayuda para un comando dado
 
-**Uso:**
+**Usage:**
 ```
-$ drupal help [arguments] [options]
+drupal help [arguments] [options]
 ```
 
-## Opciones disponibles
-Opción | Detalles
+## Available options
+Option | Details
 -------|-------------
 --xml | Mostrar el listado como XML
 --raw | Mostrar el listado como datos en bruto
 --format | El formato de salida (txt, xml, json, o md)
 
-## Argumentos disponibles
-Argumento | Detalles
+## Available arguments
+Argument | Details
 ---------|-------------
-command_name | El nombre del comando
+command_name | The command name

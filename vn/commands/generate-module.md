@@ -1,22 +1,40 @@
 # generate:module
-Generate a module.
+Tạo một module.
 
 **Usage:**
 ```
-$ drupal generate:module [options]
-$ gm  
+drupal generate:module [options]
+gm
 ```
 
-## Các tùy chọn có sẵn
-Tùy chọn | Các chi tiết
+## Available options
+Option | Details
 -------|-------------
---module | The Module name
---machine-name | The machine name (lowercase and underscore only)
---module-path | The path of the module
---description | Module description
---core | Core version
+--module | Tên Module
+--machine-name | Tên máy (chỉ chữ thường và gạch dưới)
+--module-path | Đường dẫn của module
+--description | Mô tả module
+--core | Phiên bản Core
 --package | Module package
 --module-file | Add a .module file
 --features-bundle | Define module as feature using the given Features bundle name
---composer | Add a composer.json file
---dependencies | Module dependencies separated by commas (i.e. context, panels)
+--composer | Thêm một file composer.json
+--dependencies | Sự phụ thuộc của module chia ra bởi dấu phẩy (ví dụ context, panels)
+--test | Tạo một test class
+--twigtemplate | Generate theme template
+
+## Examples
+* Generate a module specifying the module name, machine name, the path, its description, drupal core and the package name. In this example the composer file, the unit test and twig template are generated too
+```
+drupal generate:module  \
+  --module="modulename"  \
+  --machine-name="modulename"  \
+  --module-path="/modules/custom"  \
+  --description="My Awesome Module"  \
+  --core="8.x"  \
+  --package="Custom"  \
+  --module-file  \
+  --composer  \
+  --test  \
+  --twigtemplate
+```

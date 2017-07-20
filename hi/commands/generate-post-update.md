@@ -1,13 +1,22 @@
 # generate:post:update
 commands.generate.post:update.description
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal generate:post:update [options]
+drupal generate:post:update [options]
+gpu
 ```
 
-## उपलब्ध विकल्प
-विकल्प | विवरण
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
+--module | मोड्यूल का नाम।
 --post-update-name | Post Update Name
+
+## Examples
+* Generate an implementation of post update hook specifying the module name and the post update name
+```
+drupal generate:post:update  \
+  --module="modulename"  \
+  --post-update-name="PostUpdateName"
+```

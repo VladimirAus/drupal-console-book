@@ -1,14 +1,24 @@
 # generate:routesubscriber
-Generate a RouteSubscriber
+Tạo một RouteSubscriber
 
 **Usage:**
 ```
-$ drupal generate:routesubscriber [options]
+drupal generate:routesubscriber [options]
+gr
 ```
 
-## Các tùy chọn có sẵn
-Tùy chọn | Các chi tiết
+## Available options
+Option | Details
 -------|-------------
---module | The Module name.
---name | Service name
---class | Class name
+--module | Tên module.
+--name | Tên dịch vụ
+--class | Tên lớp
+
+## Examples
+* Generate a route subscriber specifying the module name, the route name and its class
+```
+drupal generate:routesubscriber  \
+  --module="modulename"  \
+  --name="modulename.route_subscriber"  \
+  --class="RouteSubscriber"
+```

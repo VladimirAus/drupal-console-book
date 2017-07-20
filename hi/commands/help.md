@@ -1,19 +1,19 @@
 # help
 एक कमांड के लिए मदद प्रदर्शित करता है
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal help [arguments] [options]
+drupal help [arguments] [options]
 ```
 
-## उपलब्ध विकल्प
-विकल्प | विवरण
+## Available options
+Option | Details
 -------|-------------
 --xml | XML के रूप में उत्पादन सूची
 --raw | रॉ कमांड सूची उत्पादन करने के लिए
 --format | फॉर्मेट आउटपुट (txt, xml, json, or md)
 
-## उपलब्ध तर्क
-तर्क | विवरण
+## Available arguments
+Argument | Details
 ---------|-------------
-command_name | कमांड का नाम
+command_name | The command name

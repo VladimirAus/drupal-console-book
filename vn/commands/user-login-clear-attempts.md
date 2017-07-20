@@ -3,11 +3,12 @@ Xóa các đăng nhập thử không thành công cho một tài khoản.
 
 **Usage:**
 ```
-$ drupal user:login:clear:attempts [arguments]
-$ uslca  
+drupal user:login:clear:attempts [arguments]
+ulca
+uslca
 ```
 
-## Các đối số có sẵn
-Đối số | Các chi tiết
+## Available arguments
+Argument | Details
 ---------|-------------
 uid | ID người dùng.

@@ -1,17 +1,19 @@
 # translation:sync
 Sincronizar archivos de traducción
 
-**Uso:**
+**Usage:**
 ```
-$ drupal translation:sync [arguments] [options]
+drupal translation:sync [arguments] [options]
+tsy
 ```
 
-## Opciones disponibles
-Opción | Detalles
+## Available options
+Option | Details
 -------|-------------
 --file | commands.translation.stats.options.file
 
-## Argumentos disponibles
-Argumento | Detalles
+## Available arguments
+Argument | Details
 ---------|-------------
 language | Idioma cuyos ficheros se sincronizarán contra el inglés
+library | commands.translation.sync.arguments.library

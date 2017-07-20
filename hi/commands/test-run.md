@@ -1,19 +1,20 @@
 # test:run
 अनुप्रयोग के उपलब्ध परीक्षणों मे से परिक्षण यूनिट को चलायें
 
-**प्रयोग:**
+**Usage:**
 ```
-$ drupal test:run [arguments] [options]
-$ tr  
+drupal test:run [arguments] [options]
+ter
+tr
 ```
 
-## उपलब्ध विकल्प
-विकल्प | विवरण
+## Available options
+Option | Details
 -------|-------------
 --url | commands.test.run.arguments.url
 
-## उपलब्ध तर्क
-तर्क | विवरण
+## Available arguments
+Argument | Details
 ---------|-------------
 test-class | परिक्षण क्लास
 test-methods | Test method(s) to be run

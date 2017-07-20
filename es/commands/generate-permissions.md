@@ -1,13 +1,14 @@
 # generate:permissions
 commands.generate.permission.description
 
-**Uso:**
+**Usage:**
 ```
-$ drupal generate:permissions [options]
+drupal generate:permissions [options]
+gp
 ```
 
-## Opciones disponibles
-Opción | Detalles
+## Available options
+Option | Details
 -------|-------------
 --module | Nombre del módulo.
 --permissions | Crear permisos.

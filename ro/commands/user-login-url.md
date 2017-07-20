@@ -1,13 +1,20 @@
 # user:login:url
 Returneaza un URL de logare care poate fi folosit o singură dată.
 
-**Folosire:**
+**Usage:**
 ```
-$ drupal user:login:url [arguments]
-$ uslu  
+drupal user:login:url [arguments]
+ulu
+uslu
 ```
 
-## Argumente disponibile
-Argument | Detalii
+## Available arguments
+Argument | Details
 ---------|-------------
 user-id | ID utilizator.
+
+## Examples
+* Get one time login url for user id 1
+```
+drupal user:login:url  1
+```

@@ -1,23 +1,23 @@
 # cache:rebuild
 Reconstruiți și curățați tot cache-ul.
 
-**Folosire:**
+**Usage:**
 ```
-$ drupal cache:rebuild [arguments]
-$ cr  
+drupal cache:rebuild [arguments]
+cr
 ```
 
-## Argumente disponibile
-Argument | Detalii
+## Available arguments
+Argument | Details
 ---------|-------------
 cache | Curățați doar cache-ul specificat.
 
-## Exemple
+## Examples
 * Reconstruiți tot cache-ul
 ```
-$ drupal cr all
+drupal cr all
 ```
 * Reconstruiți discovery cache
 ```
-$ drupal cr discovery
+drupal cr discovery
 ```

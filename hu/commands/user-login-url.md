@@ -1,13 +1,20 @@
 # user:login:url
 Egyszer használatos felhasználói bejelentkezési URL-címet ad vissza.
 
-**Használat:**
+**Usage:**
 ```
-$ drupal user:login:url [arguments]
-$ uslu  
+drupal user:login:url [arguments]
+ulu
+uslu
 ```
 
-## Rendelkezésre álló argumentumok
-Argumentum | Részletek
+## Available arguments
+Argument | Details
 ---------|-------------
 user-id | Felhasználói azonosító.
+
+## Examples
+* Get one time login url for user id 1
+```
+drupal user:login:url  1
+```

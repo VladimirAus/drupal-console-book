@@ -1,12 +1,12 @@
 # locale:translation:status
-List available translation updates
+Danh sách cập nhật bản dịch có sẵn
 
 **Usage:**
 ```
-$ drupal locale:translation:status [arguments]
+drupal locale:translation:status [arguments]
 ```
 
-## Các đối số có sẵn
-Đối số | Các chi tiết
+## Available arguments
+Argument | Details
 ---------|-------------
-language | Language for instance es or Spanish
+language | Ngôn ngữ ví sụ như es hoặc Spanish

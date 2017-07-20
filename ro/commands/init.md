@@ -1,12 +1,14 @@
 # init
 Copy configuration files to user home directory.
 
-**Folosire:**
+**Usage:**
 ```
-$ drupal init [options]
+drupal init [options]
 ```
 
-## Opțiuni disponibile
-Opțiune | Detalii
+## Available options
+Option | Details
 -------|-------------
+--destination | Destination directory to copy files
 --override | Override configurations files
+--autocomplete | Autocomplete tool files flag.
