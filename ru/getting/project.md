@@ -1,30 +1,28 @@
 # Структира проекта
 
-You need to install two things to get DrupalConsole working:
-1. The DrupalConsole Launcher
-2. DrupalConsole itself
+DrupalConsole состоит из:
+
+1. Пускового файла для DrupalConsole
+2. Приложения DrupalConsole
 
 ## Зачем нужен пусковой файл?
 
-This is a global executable that enables you to run the command, `drupal`, 
-from any directory within your site's project. 
-Without it you will be inconvenienced by having to run the command only 
-from your drupal root directory. 
+Пусковой файл позволяет зупустить приложения из любой папки запустив команду 
+`drupal`. Без пускового файла приложения DrupalConsole можно запустить только
+из папки, где установлен Drupal.
 
-For example, if you have Drupal root in a /web directory, and a composer.json 
-and your vendor directory in the directory above that, you will be able to run 
-the `drupal` command from the same directory as the composer.json file. Even 
-better, you can run it from any subdirectory under that as many levels deep as 
-you would like to go.
+К примеру, если Drupal находится в папке `/app/web`, а файл `composer.json`
+и папка `vendor` в папке `/app`, команду `drupal` можно будет успешно запустить
+из папки `/app` или из любой папки внутри `/app`.
 
-[Install Drupal Console Launcher aka Global executable](./launcher.md)
+[Установка пускового файла для DrupalConsole](./launcher.md)
 
 ## Установка DrupalConsole отдельно для каждого проекта с помощью приложения Composer
 
 Each one of your site projects should have it's own DrupalConsole installed. 
 This is done using Composer.
 
-[Install Drupal Console Using Composer](./composer.md) 
+[Установка DrupalConsole с помощью приложения Composer](./composer.md) 
 
 **Notes:** Starting on RC releases DrupalConsole must be installed per site. 
 Install Drupal Console using `composer global require` is no longer supported.
