@@ -9,7 +9,7 @@
 
 * [Установка](getting/project.md)
   * [С помощью Composer](getting/composer.md)
-  * [Приложение или пусковой файл](getting/launcher.md)
+  * [Установка пускового файла Drupal Console](getting/launcher.md)
   * [Установка на Windows ОС](getting/windows.md)
   
 * [Использование проекта](using/project.md)
